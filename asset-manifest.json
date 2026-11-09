@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/schedule/static/css/main.9e48c96e.css",
+    "main.js": "/schedule/static/js/main.61f0dba8.js",
+    "static/media/spheres_aqua.png": "/schedule/static/media/spheres_aqua.b83da56740c85542abfe.png",
+    "static/media/moon.jpg": "/schedule/static/media/moon.f2a9e9d4bf38ccd49f02.jpg",
+    "static/media/moon_craters.jpg": "/schedule/static/media/moon_craters.8ec54b2985918dd8b32a.jpg",
+    "static/media/black_gold.png": "/schedule/static/media/black_gold.1a8d3ad2eb0f6403975d.png",
+    "static/media/theme-artemis_ii.png": "/schedule/static/media/theme-artemis_ii.6d7bfa137af121a44987.png",
+    "static/media/testet.jpg": "/schedule/static/media/testet.d4b411d1c1162b815787.jpg",
+    "static/media/theme-moon.png": "/schedule/static/media/theme-moon.8ab3582eb3e3812b5430.png",
+    "static/media/earth.png": "/schedule/static/media/earth.388da38fec268700e5d2.png",
+    "static/media/themes-z.png": "/schedule/static/media/themes-z.cbf805fb9e9bae281e4a.png",
+    "static/media/themes.png": "/schedule/static/media/themes.87a4a50061794e2fceff.png",
+    "static/media/panel-5.png": "/schedule/static/media/panel-5.9db53037459ac24133a8.png",
+    "static/media/mars.png": "/schedule/static/media/mars.ed120f6e52ef52ed08a8.png",
+    "static/media/venus.png": "/schedule/static/media/venus.83bf88ee16b45a3a2c5e.png",
+    "static/media/mercury.png": "/schedule/static/media/mercury.f5728da5e34eb1e323c4.png",
+    "static/media/theme-2.png": "/schedule/static/media/theme-2.0408f68669368703db67.png",
+    "static/media/theme-goldblack.png": "/schedule/static/media/theme-goldblack.c6285dc56c396ffd9f42.png",
+    "static/media/theme-3.png": "/schedule/static/media/theme-3.a2aee1a83e9d74625c23.png",
+    "static/media/theme-matrix.png": "/schedule/static/media/theme-matrix.48330a55545ba1302711.png",
+    "static/media/week-component.png": "/schedule/static/media/week-component.00f1cf23b7eb0b1c35a0.png",
+    "static/media/theme.png": "/schedule/static/media/theme.c0db2c5d41796aa8add9.png",
+    "index.html": "/schedule/index.html",
+    "main.9e48c96e.css.map": "/schedule/static/css/main.9e48c96e.css.map",
+    "main.61f0dba8.js.map": "/schedule/static/js/main.61f0dba8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e48c96e.css",
+    "static/js/main.61f0dba8.js"
+  ]
+}
