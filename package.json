@@ -2,7 +2,7 @@
   "name": "schedule",
   "version": "1.19.1",
   "private": true,
-  "homepage": "https://khc-npua.github.io/schedule/",
+  "homepage": "https://khc-toolkit.github.io/schedule/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "@testing-library/dom": "^10.4.1",
