@@ -1,0 +1,40 @@
+.root {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  grid-template-columns: repeat(8, 400px);
+  overflow-x: auto;
+  padding: 10px 0;
+  padding-top: 4rem;
+}
+
+.themeText {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+.version {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-image: var(--bg-image);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.panel *:last-child {
+  position: static;
+  pointer-events: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  button {
+    padding: 10px;
+  }
+}

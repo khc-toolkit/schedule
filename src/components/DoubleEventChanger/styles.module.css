@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 25px 0;
+  /* background: none; */
+  border-color: var(--border);
+  backdrop-filter: var(--bg-effect);
+  position: relative;
+}
+
+.statusText{
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.statusBox {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  height: 100%;
+}
+
+.point {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--text-dim);
+}
+
+.pointActive {
+  background-color: var(--accent);
+}

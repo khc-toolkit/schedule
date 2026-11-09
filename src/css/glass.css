@@ -1,0 +1,51 @@
+.colors_glass {
+   /* semantic layer */
+  --bg: #042516;
+  --bg-contrast: #00000018;
+
+  --text: #f5f5f5;
+  --text-dim: #f1f1f1;
+  --text-negative: #fafafa;
+
+  --primary: #d3d3d3;
+  --primary-shade: #808080;
+  --primary-gradient: linear-gradient(to bottom, var(--primary), var(--primary-shade));
+
+  --secondary: #858585;
+  --secondary-shade: #383838;
+  --secondary-gradient: linear-gradient(to bottom, var(--secondary), var(--secondary-shade));
+
+  --primary-secondary-gradient: linear-gradient(to bottom, var(--primary), var(--secondary));
+
+  --accent: #ffffff;
+  
+  --error: #f06b6b;
+  --success: #9ef06b;
+
+  /* button */
+  --button-bg: var(--bg-contrast);
+  --button-bg-disabled: #0000002a;
+  
+  /* surfaces */
+  --surface: #00000080;
+  --border: #428d67;
+
+  /* message */
+  --message-color: #ffffff;
+  --message-border-color: #69b68f;
+  --message-bg: linear-gradient(135deg, #0000002a, 75%, var(--messageBg));
+
+  /* lesson */
+  --lesson-timer-color: #f5f5f5;
+  --lesson-timer-bg: #00000031;
+
+  /* notification */
+  --notification-bg: #ff0000;
+
+  /* visual background */
+  --bg-image: url("../assets/img/background/spheres_aqua.png");
+  --bg-effect: blur(15px);
+  --bg-image-size: cover;
+  --bg-image-position: center;
+  --bg-image-attachment: initial;
+}

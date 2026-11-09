@@ -1,0 +1,37 @@
+.root {
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: var(--bg-effect);
+  background-color: var(--bg-contrast);
+  border: 1px solid var(--border);
+}
+
+.version {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.text {
+  position: relative;
+  text-wrap: balance;
+  padding-left: 14px;
+}
+
+.text::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.preview {
+  width: 100%;
+  max-width: 425px;
+  border-radius: 5px;
+}

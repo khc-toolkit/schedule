@@ -1,0 +1,80 @@
+.root {
+  display: block;
+  grid-template-areas:
+    "header header"
+    "teacher teacher"
+    "room time";
+  gap: 5px;
+  padding: 1rem 1.7rem 1rem 1rem;
+  border-radius: 10px;
+  position: relative;
+  width: max-content;
+  min-width: 250px;
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--bg-contrast);
+  backdrop-filter: var(--bg-effect);
+}
+
+.rootCurrent {
+  .line {
+    background: var(--primary-gradient);
+  }
+}
+
+.titleBox {
+  text-wrap: balance;
+  margin-bottom: 10px;
+}
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.teacherBox {
+  margin-bottom: 8px;
+}
+
+.teacher,
+.room {
+  color: var(--text-dim);
+}
+
+.teacher {}
+.room {}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-radius: 0;
+  border-top: 1px solid var(--border);
+}
+
+.timeBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* .time {} */
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--lesson-timer-color);
+  background: var(--lesson-timer-bg);
+}
+
+.line {
+  height: 100%;
+  width: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  border-radius: 0px 100px 100px 0px;
+  background: var(--primary-secondary-gradient);
+}

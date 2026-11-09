@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+  height: 150px;
+  gap: 10px;
+  
+  backdrop-filter: var(--bg-effect);
+  background: var(--message-bg);
+  color: var(--message-color);
+  border: 2px solid var(--message-border-color);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}

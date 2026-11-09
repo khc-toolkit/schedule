@@ -1,0 +1,41 @@
+.root {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.headerText {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+  backdrop-filter: var(--bg-effect);
+  background-color: var(--bg-contrast);
+}
+
+.buttons {
+  position: sticky;
+  bottom: 70px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.button {
+  padding: 15px 0;
+  margin: 10px 0;
+  border-color: var(--border);
+  backdrop-filter: var(--bg-effect);
+}
+
+.buttonActive {
+  box-shadow: inset 0 4px 0 var(--accent);
+  border-color: var(--accent);
+}
+
+.lessons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,22 @@
+.root {
+  border-radius: 10px;
+  background-position: 50% -5%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.root_1 {
+  background-image: url("../../assets/img/background/mercury.png");
+}
+
+.root_2 {
+  background-image: url("../../assets/img/background/venus.png");
+}
+
+.root_3 {
+  background-image: url("../../assets/img/background/earth.png");
+}
+
+.root_4 {
+  background-image: url("../../assets/img/background/mars.png");
+}

@@ -1,0 +1,24 @@
+.root {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: var(--bg-contrast);
+  backdrop-filter: var(--bg-effect);
+}
+
+.optionName {
+  font-size: 1.1rem;
+  text-align: left;
+  color: var(--text);
+}
+
+.toggle {
+  rotate: 180deg;
+  opacity: .8;
+}
+
+.toggleActive {
+  color: var(--accent);
+}

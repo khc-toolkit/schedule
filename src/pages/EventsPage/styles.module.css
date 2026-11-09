@@ -1,0 +1,22 @@
+.root {
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 4.5rem;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.noEvents {
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  backdrop-filter: var(--bg-effect);
+}

@@ -1,0 +1,51 @@
+.colors_testet {
+  /* semantic layer */
+  --bg: #292929;
+  --bg-contrast: #0000002a;
+
+  --text: #ffffff;
+  --text-dim: #ebebeb;
+  --text-negative: #050505;
+
+  --primary: #f5f5f5;
+  --primary-shade: #d3d3d3;
+  --primary-gradient: linear-gradient(to bottom, var(--primary), var(--primary-shade));
+
+  /* --secondary: #; */
+  /* --secondary-shade: #; */
+  /* --secondary-gradient: linear-gradient(to bottom, var(--secondary), var(--secondary-shade)); */
+
+  --primary-secondary-gradient: linear-gradient(to bottom, #d3d3d3, #3effdf);
+
+  --accent: #3effdf;
+  
+  --error: #f06b6b;
+  --success: #9ef06b;
+
+  /* button */
+  --button-bg: #4d4d4d;
+  --button-bg-disabled: #303030;
+  
+  /* surfaces */
+  --surface: #00000080;
+  --border: #5e5e5e;
+
+  /* message */
+  --message-color: #ffffff;
+  --message-border-color: #ffffff56;
+  --message-bg: linear-gradient(135deg, #0000002a, 75%, #3effdf);
+
+  /* lesson */
+  --lesson-timer-color: #f5f5f5;
+  --lesson-timer-bg: #00000031;
+
+  /* notification */
+  --notification-bg: #ff0000;
+
+  /* visual background */
+  --bg-image: url("../assets/img/background/testet.jpg");
+  --bg-effect: blur(15px);
+  --bg-image-size: contain;
+  --bg-image-position: center;
+  --bg-image-attachment: initial;
+}

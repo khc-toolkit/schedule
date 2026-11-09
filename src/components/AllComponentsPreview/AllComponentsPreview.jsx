@@ -1,0 +1,178 @@
+// libs
+import { BrowserRouter } from "react-router-dom";
+
+// components
+import BeforeClass from "../BeforeClass";
+import Weekend from "../Weekend";
+import AfterClass from "../AfterClass";
+import Break from "../Break";
+import LessonController from "../LessonController";
+import ShowWeekLessons from "../ShowWeekLessons";
+import NotificationCircle from "../NotificationCircle";
+import Navigation from "../Navigation";
+import EventCard from "../EventCard";
+import PracticeController from "../PracticeController";
+import SettingsOption from "../SettingsOption";
+import PracticePage from "../../pages/PracticePage";
+
+import themesData from "../../constants/themes";
+
+// styles
+import classes from "./styles.module.css";
+export default function AllComponentsPreview() {
+  return (
+    <div className={classes.root}>
+      {themesData.map((theme) => (
+        <AllVersions theme={theme.theme} key={theme.theme} />
+      ))}
+    </div>
+  );
+}
+
+function AllVersions({ theme }) {
+  return (
+    <div className={`colors_default ${theme} ${classes.version}`}>
+      <h2 className={classes.themeText}>{theme}</h2>
+
+      <div className={classes.buttons}>
+        <button>Button</button>
+        <button disabled>Button disabled</button>
+      </div>
+      <div
+        style={{
+          position: "relative",
+          padding: "10px",
+          border: "1px solid var(--primaryColor_4)",
+          backgroundColor: "var(--primaryColor_1)",
+        }}
+      >
+        update section
+        <NotificationCircle />
+      </div>
+      <BeforeClass startedTime={"21:00"} />
+      <Weekend />
+      <AfterClass />
+      <Break filteredLessons={[{ status: "default", start: "20:00" }]} />
+      <div style={{ marginTop: "15px", width: "100%" }}></div>
+
+      <SettingsOption optionData={{ name: "Some option" }} />
+
+      <PracticePage />
+      <PracticeController
+        data={{
+          teacher: "Galoyan S",
+          b: "5",
+          f: "10",
+          r: "9",
+          fullRoom: "51009",
+          start: "09:30",
+          end: "11:10",
+        }}
+      />
+
+      <PracticeController
+        data={{
+          teacher: "Galoyan S",
+          b: "5",
+          f: "10",
+          r: "9",
+          fullRoom: "51009",
+          start: "11:00",
+          end: "11:10",
+        }}
+      />
+
+      <PracticeController
+        data={{
+          teacher: "Galoyan S",
+          b: "5",
+          f: "10",
+          r: "9",
+          fullRoom: "51009",
+          start: "12:50",
+          end: "11:10",
+        }}
+      />
+
+      <PracticeController
+        data={{
+          teacher: "Galoyan S",
+          b: "5",
+          f: "10",
+          r: "9",
+          fullRoom: "51009",
+          start: "14:20",
+          end: "11:10",
+        }}
+      />
+
+      <EventCard
+        data={{
+          title: "Title",
+          date: "2030-02-20 10:00",
+          place: "Place street",
+        }}
+      />
+      <EventCard
+        data={{
+          title: "Title prev",
+          date: "2010-02-20 10:00",
+          place: "Place street",
+        }}
+      />
+      <LessonController
+        data={{
+          title: "Title",
+          room: 40404,
+          teacher: "Galoyan S",
+          start: "09:30",
+          end: "23:00",
+          status: "current",
+        }}
+      />
+
+      <LessonController
+        data={{
+          title: "Title",
+          room: 40404,
+          teacher: "Galoyan S",
+          start: "11:00",
+          end: "09:30",
+          status: "default",
+        }}
+      />
+
+      <LessonController
+        data={{
+          title: "Title",
+          room: 40404,
+          teacher: "Galoyan S",
+          start: "12:50",
+          end: "09:30",
+          status: "default",
+        }}
+      />
+
+      <LessonController
+        data={{
+          title: "Title",
+          room: 40404,
+          teacher: "Galoyan S",
+          start: "14:20",
+          end: "09:30",
+          status: "default",
+        }}
+      />
+
+      <div style={{ width: "100%" }}></div>
+
+      <ShowWeekLessons />
+
+      <div className={classes.panel}>
+        <BrowserRouter>
+          <Navigation />
+        </BrowserRouter>
+      </div>
+    </div>
+  );
+}
