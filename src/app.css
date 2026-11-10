@@ -7,6 +7,7 @@
 @import url("./css/moon.css");
 @import url("./css/artemis_ii.css");
 @import url("./css/new_2027_year.css");
+@import url("./css/frost.css");
 
 * {
   margin: 0;
@@ -21,7 +22,7 @@ body {
   touch-action: manipulation;
   padding: 15px;
   color: var(--text);
-  background-color: var(--bg);
+  background: var(--bg);
   background-image: var(--bg-image);
   background-size: var(--bg-image-size);
   background-position: var(--bg-image-position);

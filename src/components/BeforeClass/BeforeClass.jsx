@@ -1,12 +1,12 @@
 // libs
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 // utils
-import getDateTime from '../../utils/getDateTime';
-import timerFormat from '../../utils/timerFormat';
+import getDateTime from "../../utils/getDateTime";
+import timerFormat from "../../utils/timerFormat";
 
 // styles
-import classes from './styles.module.css';
+import classes from "./styles.module.css";
 
 export default function BeforeClass({ startedTime }) {
   const [timer, setTimer] = useState(null);
@@ -14,7 +14,6 @@ export default function BeforeClass({ startedTime }) {
   useEffect(() => {
     const startTime = getDateTime(startedTime);
     const currentTime = new Date().getTime();
-
     setTimer(Math.floor((startTime - currentTime) / 1000));
   }, []);
 
@@ -24,12 +23,12 @@ export default function BeforeClass({ startedTime }) {
     }
 
     const intervalId = setInterval(() => {
-      setTimer(prev => prev - 1);
+      setTimer((prev) => prev - 1);
     }, 1000);
 
     return () => {
       clearInterval(intervalId);
-    }
+    };
   }, [timer]);
 
   return (
@@ -37,5 +36,5 @@ export default function BeforeClass({ startedTime }) {
       <p className={classes.title}>Առաջին դասը կսկսվի ժամը {startedTime}-ին </p>
       <p>{timerFormat(timer)}</p>
     </div>
-  )
+  );
 }

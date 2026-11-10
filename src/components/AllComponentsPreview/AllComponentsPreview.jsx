@@ -11,9 +11,9 @@ import ShowWeekLessons from "../ShowWeekLessons";
 import NotificationCircle from "../NotificationCircle";
 import Navigation from "../Navigation";
 import EventCard from "../EventCard";
-import PracticeController from "../PracticeController";
 import SettingsOption from "../SettingsOption";
-import PracticePage from "../../pages/PracticePage";
+// import PracticeController from "../PracticeController";
+// import PracticePage from "../../pages/PracticePage";
 
 import themesData from "../../constants/themes";
 
@@ -21,7 +21,10 @@ import themesData from "../../constants/themes";
 import classes from "./styles.module.css";
 export default function AllComponentsPreview() {
   return (
-    <div className={classes.root}>
+    <div
+      className={classes.root}
+      style={{ gridTemplateColumns: `repeat(${themesData.length}, 400px)` }}
+    >
       {themesData.map((theme) => (
         <AllVersions theme={theme.theme} key={theme.theme} />
       ))}
@@ -57,8 +60,8 @@ function AllVersions({ theme }) {
 
       <SettingsOption optionData={{ name: "Some option" }} />
 
-      <PracticePage />
-      <PracticeController
+      {/* <PracticePage /> */}
+      {/* <PracticeController
         data={{
           teacher: "Galoyan S",
           b: "5",
@@ -104,7 +107,7 @@ function AllVersions({ theme }) {
           start: "14:20",
           end: "11:10",
         }}
-      />
+      /> */}
 
       <EventCard
         data={{

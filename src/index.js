@@ -19,4 +19,8 @@ root.render(
   </HashRouter>,
 );
 
-// root.render(<Provider store={store}><AllComponentsPreview /></Provider>);
+// root.render(
+//   <Provider store={store}>
+//     <AllComponentsPreview />
+//   </Provider>,
+// );
