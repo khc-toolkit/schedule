@@ -19,7 +19,7 @@ import artemis2Img from "../assets/img/updates/theme-artemis_ii.png";
 import modeImg from "../assets/img/updates/mode.png";
 import eventsImg from "../assets/img/updates/events.png";
 
-const lastUpdateAt = "2026-11-09T20:19:31.068Z"
+const lastUpdateAt = "2026-11-10T09:20:45.289Z"
 
 export const listTypes = {
   text: "text",
@@ -29,6 +29,10 @@ export const listTypes = {
 const updates = {
   lastUpdateAt,
   versions: [
+    {
+      version: "1.19.1",
+      list: [[listTypes.text, "bug fix: թայմեր"]],
+    },
     {
       version: "1.19.0",
       list: [
