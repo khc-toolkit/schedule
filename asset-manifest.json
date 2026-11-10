@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/schedule/static/css/main.503cefd1.css",
-    "main.js": "/schedule/static/js/main.84cb433b.js",
+    "main.css": "/schedule/static/css/main.95acf9e1.css",
+    "main.js": "/schedule/static/js/main.af2399cf.js",
     "static/media/spheres_aqua.png": "/schedule/static/media/spheres_aqua.b83da56740c85542abfe.png",
     "static/media/moon.jpg": "/schedule/static/media/moon.f2a9e9d4bf38ccd49f02.jpg",
     "static/media/moon_craters.jpg": "/schedule/static/media/moon_craters.8ec54b2985918dd8b32a.jpg",
@@ -16,6 +16,7 @@
     "static/media/mars.png": "/schedule/static/media/mars.ed120f6e52ef52ed08a8.png",
     "static/media/venus.png": "/schedule/static/media/venus.83bf88ee16b45a3a2c5e.png",
     "static/media/mercury.png": "/schedule/static/media/mercury.f5728da5e34eb1e323c4.png",
+    "static/media/theme-frost.png": "/schedule/static/media/theme-frost.bb8dc230bbb0a7ea5bf0.png",
     "static/media/theme-2.png": "/schedule/static/media/theme-2.0408f68669368703db67.png",
     "static/media/theme-goldblack.png": "/schedule/static/media/theme-goldblack.c6285dc56c396ffd9f42.png",
     "static/media/theme-3.png": "/schedule/static/media/theme-3.a2aee1a83e9d74625c23.png",
@@ -23,11 +24,11 @@
     "static/media/week-component.png": "/schedule/static/media/week-component.00f1cf23b7eb0b1c35a0.png",
     "static/media/theme.png": "/schedule/static/media/theme.c0db2c5d41796aa8add9.png",
     "index.html": "/schedule/index.html",
-    "main.503cefd1.css.map": "/schedule/static/css/main.503cefd1.css.map",
-    "main.84cb433b.js.map": "/schedule/static/js/main.84cb433b.js.map"
+    "main.95acf9e1.css.map": "/schedule/static/css/main.95acf9e1.css.map",
+    "main.af2399cf.js.map": "/schedule/static/js/main.af2399cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.503cefd1.css",
-    "static/js/main.84cb433b.js"
+    "static/css/main.95acf9e1.css",
+    "static/js/main.af2399cf.js"
   ]
 }
