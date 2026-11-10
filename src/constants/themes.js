@@ -1,15 +1,21 @@
 const themesData = [
   {
+    name: "New 2027 Year",
+    theme: "colors_new_2027_year",
+    key: "v_t_new_2027_year",
+    version: 1,
+  },
+  {
     name: "Artemis II",
     theme: "colors_artemis_2",
     key: "v_t_artemis_2",
     version: 1,
   },
-  { 
-    name: "Moon", 
-    theme: "colors_moon", 
+  {
+    name: "Moon",
+    theme: "colors_moon",
     key: "v_t_moon",
-    version: 1, 
+    version: 1,
   },
   {
     name: "Testet",
@@ -29,17 +35,17 @@ const themesData = [
     key: "v_t_gold_black",
     version: 0,
   },
-  { 
-    name: "Glass", 
-    theme: "colors_glass", 
+  {
+    name: "Glass",
+    theme: "colors_glass",
     key: "v_t_glass",
-    version: 0, 
+    version: 0,
   },
-  { 
-    name: "Space", 
-    theme: "colors_space", 
+  {
+    name: "Space",
+    theme: "colors_space",
     key: "v_t_space",
-    version: 0, 
+    version: 0,
   },
   {
     name: "Light",
