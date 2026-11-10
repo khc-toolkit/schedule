@@ -5,8 +5,8 @@ export default function timerFormat(inputSeconds) {
 
   let result = "";
 
-  const hours = Math.ceil(inputSeconds / 3600);
-  const minutes = Math.ceil((inputSeconds % 3600) / 60);
+  const hours = Math.floor(inputSeconds / 3600);
+  const minutes = Math.floor((inputSeconds % 3600) / 60);
   const seconds = inputSeconds % 60;
 
   if (hours > 0) result += `${hours}:`;
