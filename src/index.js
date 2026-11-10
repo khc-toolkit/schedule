@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 
 // components
 import App from "./App";
-// import AllComponentsPreview from "./components/AllComponentsPreview";
+import AllComponentsPreview from "./components/AllComponentsPreview";
 
 // store
 import store from "./store/store";

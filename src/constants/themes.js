@@ -1,14 +1,14 @@
 const themesData = [
+  // {
+  //   name: "2027",
+  //   theme: "colors_new_2027_year",
+  //   key: "v_t_new_2027_year",
+  //   version: 1,
+  // },
   {
     name: "Frost",
     theme: "colors_frost",
     key: "v_t_frost",
-    version: 1,
-  },
-  {
-    name: "New 2027 Year",
-    theme: "colors_new_2027_year",
-    key: "v_t_new_2027_year",
     version: 1,
   },
   {

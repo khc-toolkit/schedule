@@ -4,7 +4,7 @@
   --bg-contrast: #0f172a;
 
   --text: #f1f5f9;
-  --text-dim: #a6b2c5;
+  --text-dim: #bec8d6;
   --text-negative: #070c18;
 
   /* Акценты: Морозный циан + Волшебный сиренево-розовый */
@@ -16,7 +16,7 @@
   --secondary-shade: #7e22ce;
   --secondary-gradient: linear-gradient(180deg, #e879f9, #9333ea);
 
-  --primary-secondary-gradient: linear-gradient(180deg, #38bdf8, #c084fc);
+  --primary-secondary-gradient: linear-gradient(-45deg, #38bdf8, #002133);
 
   --accent: #67e8f9;
   --error: #fb7185;
