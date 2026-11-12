@@ -1,1 +1,56 @@
-.root {}
+.root {
+  padding-bottom: 5rem;
+}
+
+.teachers > h2 {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  backdrop-filter: var(--bg-effect);
+  background-color: var(--bg-contrast);
+}
+
+.items > h2 {
+  text-align: center;
+}
+
+.teachers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.teacher {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  backdrop-filter: var(--bg-effect);
+  background-color: var(--bg-contrast);
+}
+
+.items {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  backdrop-filter: var(--bg-effect);
+  background-color: var(--bg-contrast);
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px dashed var(--border);
+}
+
+.itemName {
+}
+
+.itemCount {
+  color: var(--text-dim);
+}
