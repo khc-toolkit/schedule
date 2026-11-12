@@ -31,6 +31,7 @@ export default function Navigation() {
     VERSIONS.SETTINGS.key,
     VERSIONS.SETTINGS.version,
   );
+
   const { pathname } = useLocation();
 
   const isScheduleMode = defaultMode === appModes.SCHEDULE;

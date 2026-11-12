@@ -49,6 +49,10 @@ export default function Lesson({ data }) {
     optionsValues.lessonLineDisabled,
   );
 
+  const [isDisabledIcons] = useSettingsOption(
+    optionsValues.lessonIconsDisabled,
+  );
+
   useEffect(() => {
     if (timer === null) {
       return;
@@ -97,12 +101,12 @@ export default function Lesson({ data }) {
       </div>
 
       <div className={classes.teacherBox}>
-        <MdOutlinePersonOutline />
+        {!isDisabledIcons && <MdOutlinePersonOutline />}
         <p className={classes.teacher}>{teacher}</p>
       </div>
 
       <div className={classes.room}>
-        <MdOutlinePlace />
+        {!isDisabledIcons && <MdOutlinePlace />}
 
         {tempRoom ? (
           <p>
@@ -115,7 +119,7 @@ export default function Lesson({ data }) {
 
       <div className={classes.footer}>
         <div className={classes.timeBox}>
-          <CiClock2 size={17} />
+          {!isDisabledIcons && <CiClock2 size={17} />}
           <p className={classes.time}>
             {start} - {end}
           </p>
