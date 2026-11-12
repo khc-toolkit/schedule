@@ -20,7 +20,7 @@ import modeImg from "../assets/img/updates/mode.png";
 import eventsImg from "../assets/img/updates/events.png";
 import themeFrost from "../assets/img/updates/theme-frost.png";
 
-const lastUpdateAt = "2026-11-10T20:13:24.683Z"
+const lastUpdateAt = "2026-11-10T20:13:24.683Z";
 
 export const listTypes = {
   text: "text",
@@ -30,6 +30,14 @@ export const listTypes = {
 const updates = {
   lastUpdateAt,
   versions: [
+    {
+      version: "1.20.0",
+      list: [
+        [listTypes.text, "Այքոններ դասի քարտի մեջ"],
+        [listTypes.text, "Կարգավորման նոր օպցիա այքոնները անջատելու համար"],
+        [listTypes.text, "Նոր էջ՝ Ընդհանուր ինֆո"],
+      ],
+    },
     {
       version: "1.19.2",
       list: [
@@ -45,7 +53,7 @@ const updates = {
       version: "1.19.0",
       list: [
         [listTypes.text, "Թարմացված դասացուցակ"],
-        [listTypes.text, "Ծրագրի ռեժիմո փոխելու հնարավորությունը հանվել է"],
+        [listTypes.text, "Ծրագրի ռեժիմը փոխելու հնարավորությունը հանվել է"],
       ],
     },
     {
