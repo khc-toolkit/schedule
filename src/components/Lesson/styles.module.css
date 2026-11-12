@@ -31,6 +31,13 @@
   font-size: 18px;
 }
 
+.teacherBox,
+.room {
+  display: flex;
+  gap: 5px;
+  color: var(--text-dim);
+}
+
 .teacherBox {
   margin-bottom: 8px;
 }
@@ -40,8 +47,10 @@
   color: var(--text-dim);
 }
 
-.teacher {}
-.room {}
+.teacher {
+}
+.room {
+}
 
 .footer {
   display: flex;

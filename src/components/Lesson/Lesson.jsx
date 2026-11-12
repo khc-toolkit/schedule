@@ -1,21 +1,23 @@
 // libs
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from "react";
 import { CiClock2 } from "react-icons/ci";
 import { IoTimerOutline } from "react-icons/io5";
+import { MdOutlinePlace } from "react-icons/md";
+import { MdOutlinePersonOutline } from "react-icons/md";
 
 // utils
-import timerFormat from '../../utils/timerFormat';
-import getDateTime from '../../utils/getDateTime'
+import timerFormat from "../../utils/timerFormat";
+import getDateTime from "../../utils/getDateTime";
 
 // custom hooks
-import useSettingsOption from '../../customHooks/useSettingsOption';
+import useSettingsOption from "../../customHooks/useSettingsOption";
 
 // constants
-import settings from '../../constants/settings'; 
-import lessonStatuses from '../../constants/lessonStatuses';
+import settings from "../../constants/settings";
+import lessonStatuses from "../../constants/lessonStatuses";
 
 // styles
-import classes from './styles.module.css';
+import classes from "./styles.module.css";
 
 export default function Lesson({ data }) {
   const title = data?.title;
@@ -43,13 +45,17 @@ export default function Lesson({ data }) {
   const { optionsValues } = settings;
 
   const interval = useRef(null);
-  const [isDisabledGradientLine] = useSettingsOption(optionsValues.lessonLineDisabled);
+  const [isDisabledGradientLine] = useSettingsOption(
+    optionsValues.lessonLineDisabled,
+  );
 
   useEffect(() => {
-    if (timer === null) { return; }
+    if (timer === null) {
+      return;
+    }
 
     interval.current = setTimeout(() => {
-      setTimer(prev => prev - 1)
+      setTimer((prev) => prev - 1);
     }, 1000);
 
     window.addEventListener("visibilitychange", () => {
@@ -63,7 +69,7 @@ export default function Lesson({ data }) {
 
     return () => {
       clearTimeout(interval.current);
-    }
+    };
   }, []);
 
   useEffect(() => {
@@ -71,49 +77,56 @@ export default function Lesson({ data }) {
       clearTimeout(interval.current);
     } else {
       interval.current = setTimeout(() => {
-        setTimer(prev => prev - 1)
+        setTimer((prev) => prev - 1);
       }, 1000);
     }
 
     return () => {
       clearTimeout(interval.current);
-    }
+    };
   }, [timer]);
 
   return (
-    <div className={`${classes.root} ${status === lessonStatuses.CURRENT && classes.rootCurrent} ${status === lessonStatuses.COMPLETED && classes.rootCompleted}`}>
+    <div
+      className={`${classes.root} ${status === lessonStatuses.CURRENT && classes.rootCurrent} ${status === lessonStatuses.COMPLETED && classes.rootCompleted}`}
+    >
       <div className={classes.titleBox}>
-        <p className={classes.title}>{title} {type && type } {group > 0 && group }</p>
+        <p className={classes.title}>
+          {title} {type && type} {group > 0 && group}
+        </p>
       </div>
 
       <div className={classes.teacherBox}>
+        <MdOutlinePersonOutline />
         <p className={classes.teacher}>{teacher}</p>
       </div>
 
       <div className={classes.room}>
-        {
-          tempRoom ? 
-          <p><s>{room}</s> {tempRoom}</p> :
+        <MdOutlinePlace />
+
+        {tempRoom ? (
+          <p>
+            <s>{room}</s> {tempRoom}
+          </p>
+        ) : (
           <p>{room}</p>
-        }
+        )}
       </div>
 
       <div className={classes.footer}>
-        <div className={classes.timeBox}> 
+        <div className={classes.timeBox}>
           <CiClock2 size={17} />
-          <p className={classes.time}>{start} - {end}</p>
+          <p className={classes.time}>
+            {start} - {end}
+          </p>
         </div>
-        {
-          status === lessonStatuses.CURRENT &&
+        {status === lessonStatuses.CURRENT && (
           <p className={classes.timer}>
             <IoTimerOutline size={17} /> {timerFormat(timer)}
           </p>
-        }
+        )}
       </div>
-      {
-        !isDisabledGradientLine &&
-        <div className={classes.line}></div>
-      }
+      {!isDisabledGradientLine && <div className={classes.line}></div>}
     </div>
-  )
+  );
 }
