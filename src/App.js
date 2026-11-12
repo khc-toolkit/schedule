@@ -12,6 +12,7 @@ import EventsPage from "./pages/EventsPage";
 import ScheduleWeekPage from "./pages/ScheduleWeekPage";
 import StoragePage from "./pages/StoragePage";
 import InfoPage from "./pages/InfoPage";
+import GeneralInfoPage from "./pages/GeneralInfoPage";
 
 // components
 import Navigation from "./components/Navigation";
@@ -48,6 +49,7 @@ function App() {
           <Route path={routes.THEME} element={<ThemePage />} />
           <Route path={routes.STORAGE} element={<StoragePage />} />
           <Route path={routes.INFO} element={<InfoPage />} />
+          <Route path={routes.GENERAL_INFO} element={<GeneralInfoPage />} />
         </Route>
       </Routes>
 

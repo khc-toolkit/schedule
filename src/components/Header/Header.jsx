@@ -1,11 +1,11 @@
 // libs
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 // constants
-import routes from '../../constants/routes';
+import routes from "../../constants/routes";
 
 // styles
-import classes from './styles.module.css';
+import classes from "./styles.module.css";
 
 export default function Header() {
   const { pathname } = useLocation();
@@ -19,11 +19,14 @@ export default function Header() {
     [routes.THEME]: "Թեմաներ",
     [routes.STORAGE]: "Տվյալներ",
     [routes.INFO]: "Ինֆո",
+    [routes.GENERAL_INFO]: "Ընդհանուր ինֆո",
   };
 
   return (
     <header className={classes.root}>
-      <h1 className={classes.headerText}>{routeLabels[pathname] ?? "(none)"}</h1>
+      <h1 className={classes.headerText}>
+        {routeLabels[pathname] ?? "(none)"}
+      </h1>
     </header>
-  )
+  );
 }

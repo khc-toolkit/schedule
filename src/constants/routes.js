@@ -8,6 +8,7 @@ const routes = {
   THEME: "/theme",
   STORAGE: "/storage",
   INFO: "/info",
+  GENERAL_INFO: "/general_info",
 };
 
 export const defaultRoute = routes.SCHEDULE;
