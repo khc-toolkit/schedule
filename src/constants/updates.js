@@ -20,7 +20,7 @@ import modeImg from "../assets/img/updates/mode.png";
 import eventsImg from "../assets/img/updates/events.png";
 import themeFrost from "../assets/img/updates/theme-frost.png";
 
-const lastUpdateAt = "2026-11-12T18:58:45.909Z"
+const lastUpdateAt = "2026-11-13T07:48:36.042Z"
 
 export const listTypes = {
   text: "text",
