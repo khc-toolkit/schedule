@@ -20,7 +20,7 @@ import modeImg from "../assets/img/updates/mode.png";
 import eventsImg from "../assets/img/updates/events.png";
 import themeFrost from "../assets/img/updates/theme-frost.png";
 
-const lastUpdateAt = "2026-11-13T07:48:36.042Z"
+const lastUpdateAt = "2026-11-13T07:48:36.042Z";
 
 export const listTypes = {
   text: "text",
@@ -31,29 +31,36 @@ const updates = {
   lastUpdateAt,
   versions: [
     {
+      version: "1.21.0",
+      list: [[listTypes.text, "Հեռացվել է թեմաները փոխելու հնարավորությունը։"]],
+    },
+    {
       version: "1.20.0",
       list: [
-        [listTypes.text, "Այքոններ դասի քարտի մեջ"],
-        [listTypes.text, "Կարգավորման նոր օպցիա այքոնները անջատելու համար"],
-        [listTypes.text, "Նոր էջ՝ Ընդհանուր ինֆո"],
+        [listTypes.text, "Դասի քարտում ավելացվել են պատկերակներ։"],
+        [listTypes.text, "Ավելացվել է պատկերակներն անջատելու կարգավորում։"],
+        [listTypes.text, "Ավելացվել է «Ընդհանուր տեղեկություն» էջը։"],
       ],
     },
     {
       version: "1.19.2",
       list: [
-        [listTypes.text, "Նոր թեմա՝ Frost"],
+        [listTypes.text, "Ավելացվել է Frost նոր թեման։"],
         [listTypes.img, themeFrost],
       ],
     },
     {
       version: "1.19.1",
-      list: [[listTypes.text, "bug fix: թայմեր"]],
+      list: [[listTypes.text, "Ուղղվել է ժամանակաչափի սխալը։"]],
     },
     {
       version: "1.19.0",
       list: [
-        [listTypes.text, "Թարմացված դասացուցակ"],
-        [listTypes.text, "Ծրագրի ռեժիմը փոխելու հնարավորությունը հանվել է"],
+        [listTypes.text, "Թարմացվել է դասացուցակը։"],
+        [
+          listTypes.text,
+          "Հեռացվել է հավելվածի ռեժիմը փոխելու հնարավորությունը։",
+        ],
       ],
     },
     {
@@ -61,9 +68,9 @@ const updates = {
       list: [
         [
           listTypes.text,
-          "Միջոցառումների էջում ցույց է տալիս թե ինչքան ժամանակ մնաց սկսելուն",
+          "Միջոցառումների էջում այժմ ցուցադրվում է, թե որքան ժամանակ է մնացել մինչև միջոցառման մեկնարկը։",
         ],
-        [listTypes.text, "Նոր UI/UX՝ միջոցառումների էջում"],
+        [listTypes.text, "Վերամշակվել է միջոցառումների էջի UI/UX-ը։"],
         [listTypes.img, eventsImg],
       ],
     },
@@ -72,7 +79,7 @@ const updates = {
       list: [
         [
           listTypes.text,
-          "Ծրագրի ռեժիմը փոխելու button-ներ կարգավորումների էջում",
+          "Կարգավորումների էջում ավելացվել են հավելվածի ռեժիմը փոխելու կոճակներ։",
         ],
         [listTypes.img, modeImg],
       ],
@@ -82,13 +89,16 @@ const updates = {
       list: [
         [
           listTypes.text,
-          "Ինֆո էջի «տեսնել ավելին» button-ի բարձրությունը մեծացվել է",
+          "Տեղեկությունների էջում «Տեսնել ավելին» կոճակի բարձրությունը մեծացվել է։",
         ],
         [
           listTypes.text,
-          "Տվյալների էջում տվյալները ցուցադրվում են նոր դասավորությամբ (ձախ/աջ եզրերով)",
+          "Տվյալների էջի դասավորությունը թարմացվել է․ տվյալներն այժմ հավասարեցվում են ձախ և աջ եզրերին։",
         ],
-        [listTypes.text, "Նավիգացիայի նորությունների կարմիր կետը թափանցիկ էր"],
+        [
+          listTypes.text,
+          "Ուղղվել է նավիգացիայի վահանակում նորությունների կարմիր ցուցիչի թափանցիկության խնդիրը։",
+        ],
       ],
     },
     {
@@ -96,181 +106,198 @@ const updates = {
       list: [
         [
           listTypes.text,
-          "Թարմացված ակցենտային գույններ հետևյալ թեմաների համար` Artemis II, Moon, Glass",
+          "Թարմացվել են Artemis II, Moon և Glass թեմաների ակցենտային գույները։",
         ],
-        [listTypes.text, "bug fix"],
+        [listTypes.text, "Ուղղվել են տարբեր սխալներ։"],
       ],
     },
     {
       version: "1.16.0",
       list: [
-        [listTypes.text, "Նոր թեմա՝ Artemis II"],
+        [listTypes.text, "Ավելացվել է Artemis II նոր թեման։"],
         [listTypes.img, artemis2Img],
       ],
     },
     {
       version: "1.15.0",
       list: [
-        [listTypes.text, "Նոր թեմա՝ Moon"],
+        [listTypes.text, "Ավելացվել է Moon նոր թեման։"],
         [listTypes.img, themeMoonImg],
       ],
     },
     {
       version: "1.14.0",
       list: [
-        [listTypes.text, "Տեղափոխվել է նոր դոմեյն"],
-        [listTypes.text, "Հնարավորություն տեսնել թարմացումների պատմությունը"],
+        [listTypes.text, "Հավելվածը տեղափոխվել է նոր դոմեն։"],
+        [
+          listTypes.text,
+          "Ավելացվել է թարմացումների պատմությունը դիտելու հնարավորություն։",
+        ],
       ],
     },
     {
       version: "1.13.0",
-      list: [[listTypes.text, "Ցուցադրել localStorage-ի տվյալները"]],
+      list: [
+        [
+          listTypes.text,
+          "Ավելացվել է localStorage-ում պահվող տվյալները դիտելու հնարավորություն։",
+        ],
+      ],
     },
     {
       version: "1.12.0",
       list: [
-        [listTypes.text, "Կարգավորումների բաժինը բաժանվել է էջերի"],
-        [listTypes.text, "Թարմացվել են ակտիվ օրվա ոճերը"],
-        [listTypes.text, "Թարմացվել են թեմաների ակցենտների գույնները"],
-        [listTypes.text, "Փոխվել են toggle-ի ոճերը"],
+        [listTypes.text, "Կարգավորումների բաժինը բաժանվել է առանձին էջերի։"],
+        [listTypes.text, "Թարմացվել են ակտիվ օրվա ոճերը։"],
+        [listTypes.text, "Թարմացվել են թեմաների ակցենտային գույները։"],
+        [listTypes.text, "Թարմացվել են անջատիչների ոճերը։"],
       ],
     },
     {
       version: "1.11.0",
-      list: [[listTypes.text, "Էջերի անունները header-ում"]],
+      list: [
+        [
+          listTypes.text,
+          "Էջերի անվանումներն այժմ ցուցադրվում են վերնագրի հատվածում։",
+        ],
+      ],
     },
     {
       version: "1.10.0",
-      list: [[listTypes.text, "Տվյալների կարգավորման ֆունկցիա"]],
+      list: [[listTypes.text, "Ավելացվել է տվյալների կարգավորման գործառույթ։"]],
     },
     {
       version: "1.9.0",
-      list: [[listTypes.text, "Նոր կարգավորում՝ ցույց տալ լսարանի համարը"]],
+      list: [
+        [listTypes.text, "Ավելացվել է լսարանի համարը ցուցադրելու կարգավորում։"],
+      ],
     },
     {
       version: "1.8.0",
       list: [
-        [listTypes.text, "Լավացված UI/UX նավիգացիայի համար"],
+        [listTypes.text, "Բարելավվել է նավիգացիայի UI/UX-ը։"],
         [listTypes.img, panel7Img],
       ],
     },
     {
       version: "1.7.0",
       list: [
-        [listTypes.text, "Նոր թեմա՝ Testet"],
-        [listTypes.text, "Նոր թեմա՝ Сyber Slate"],
+        [listTypes.text, "Ավելացվել է Testet նոր թեման։"],
+        [listTypes.text, "Ավելացվել է Cyber Slate նոր թեման։"],
         [listTypes.img, themesZImg],
       ],
     },
     {
       version: "1.6.0",
-      list: [[listTypes.text, "Նոր էջ՝ Events"]],
+      list: [[listTypes.text, "Ավելացվել է «Միջոցառումներ» (Events) էջը։"]],
     },
     {
       version: "1.5.0",
       list: [
-        [listTypes.text, "Նոր UI/UX՝ նավիգացիայի համար"],
+        [listTypes.text, "Վերափոխվել է նավիգացիայի UI/UX-ը։"],
         [listTypes.img, panel6Img],
       ],
     },
     {
       version: "1.4.1",
       list: [
-        [listTypes.text, "Նոր թեմա՝ Matrix"],
+        [listTypes.text, "Ավելացվել է Matrix նոր թեման։"],
         [listTypes.img, themeMatrixImg],
       ],
     },
     {
       version: "1.4.0",
-      list: [[listTypes.text, "Theme-ում ավելացվել է card preview-ի աջ գիծ"]],
+      list: [
+        [listTypes.text, "Թեմայի նախադիտման քարտում ավելացվել է աջ եզրագիծ։"],
+      ],
     },
     {
       version: "1.3.0",
       list: [
-        [listTypes.text, "Նոր թեմա՝ Gold & Black"],
+        [listTypes.text, "Ավելացվել է Gold & Black նոր թեման։"],
         [listTypes.img, themeGoldBlackImg],
       ],
     },
     {
       version: "1.2.0",
       list: [
-        [listTypes.text, "Նոր UI նավիգացիայի համար"],
+        [listTypes.text, "Ներդրվել է նավիգացիայի նոր ձևավորում։"],
         [listTypes.img, panel5Img],
       ],
     },
     {
       version: "1.1.0",
       list: [
-        [listTypes.text, "Նոր էջ՝ Կարգավորումներ"],
+        [listTypes.text, "Ավելացվել է «Կարգավորումներ» էջը։"],
         [listTypes.img, panel4Img],
       ],
     },
     {
       version: "1.0.0",
       list: [
-        [listTypes.text, "ՌԵԼԻԶ ՏԱՐԲԵՐԱԿ"],
-        [listTypes.text, "Նոր UI/UX նավիգացիայի համար"],
+        [listTypes.text, "Հավելվածի առաջին պաշտոնական թողարկումը։"],
+        [listTypes.text, "Վերափոխվել է նավիգացիայի UI/UX-ը։"],
         [listTypes.img, panel3Img],
       ],
     },
     {
       version: "0.3.4",
       list: [
-        [listTypes.text, "Նոր էջ՝ Թեմաներ"],
+        [listTypes.text, "Ավելացվել է «Թեմաներ» էջը։"],
         [listTypes.img, themesImg],
       ],
     },
     {
       version: "0.3.3",
       list: [
-        [listTypes.text, "Նոր թեմա՝ Glass"],
+        [listTypes.text, "Ավելացվել է Glass նոր թեման։"],
         [listTypes.img, theme3Img],
       ],
     },
     {
       version: "0.3.2",
       list: [
-        [listTypes.text, "bug fix"],
-        [listTypes.text, "Space թեմայի background-ը փոխվել է"],
-        [listTypes.text, "Հեռացվել են ավարտված դասերը"],
+        [listTypes.text, "Ուղղվել են մի շարք սխալներ։"],
+        [listTypes.text, "Փոխվել է Space թեմայի ֆոնը։"],
+        [listTypes.text, "Հեռացվել են ավարտված դասերը։"],
       ],
     },
     {
       version: "0.3.1",
       list: [
-        [listTypes.text, "Ավելացվել է համարիչ/հայտարարի button-ներ"],
-        [listTypes.text, "Դասացուցակի թարմացում"],
+        [listTypes.text, "Ավելացվել են համարիչի և հայտարարի կոճակները։"],
+        [listTypes.text, "Թարմացվել է դասացուցակը։"],
       ],
     },
     {
       version: "0.3.0",
       list: [
-        [listTypes.text, "Թարգմանվել է հայերեն"],
-        [listTypes.text, "Նոր UI/UX Lesson  կոմպոնենտի համար"],
+        [listTypes.text, "Հավելվածը թարգմանվել է հայերեն։"],
+        [listTypes.text, "Թարմացվել է Lesson բաղադրիչի UI/UX-ը։"],
         [listTypes.img, lessonCard2Img],
       ],
     },
     {
       version: "0.2.3",
       list: [
-        [listTypes.text, "Նոր UI/UX Lesson կոմպոնենտի համար"],
+        [listTypes.text, "Բարելավվել է Lesson բաղադրիչի UI/UX-ը։"],
         [listTypes.img, lessonCardImg],
       ],
     },
     {
       version: "0.2.2",
-      list: [[listTypes.text, "Ավելացվել են իրական դասեր"]],
+      list: [[listTypes.text, "Ավելացվել են իրական դասեր։"]],
     },
     {
       version: "0.2.1",
-      list: [[listTypes.text, "Բետա նամակի թարմացված ոճեր"]],
+      list: [[listTypes.text, "Թարմացվել են բետա հրավերի նամակի ոճերը։"]],
     },
     {
       version: "0.2.0",
       list: [
-        [listTypes.text, "Նոր UI/UX բոլոր button-ների համար"],
-        [listTypes.text, "Ամբողջ շաբաթվա դասացուցակ"],
-        [listTypes.text, "Նոր թեմաներ"],
+        [listTypes.text, "Թարմացվել է բոլոր կոճակների UI/UX-ը։"],
+        [listTypes.text, "Ավելացվել է ամբողջ շաբաթվա դասացուցակը։"],
+        [listTypes.text, "Ավելացվել են նոր թեմաներ։"],
         [listTypes.img, weekComponentImg],
         [listTypes.img, theme2Img],
       ],
@@ -278,8 +305,8 @@ const updates = {
     {
       version: "0.1.0",
       list: [
-        [listTypes.text, "Պրոեկտի հիմնական տեսք"],
-        [listTypes.text, "Թեմա ընտրելու մենյու"],
+        [listTypes.text, "Ստեղծվել է նախագծի հիմնական տեսքը։"],
+        [listTypes.text, "Ավելացվել է թեմայի ընտրության ընտրացանկը։"],
         [listTypes.img, themeImg],
       ],
     },
