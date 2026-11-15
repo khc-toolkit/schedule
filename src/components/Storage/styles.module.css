@@ -12,7 +12,7 @@
   font-size: 1.3rem;
   margin-bottom: 20px;
   border-radius: 5px;
-  backdrop-filter: var(--bg-effect);  
+  backdrop-filter: var(--bg-effect);
   border: 1px solid var(--border);
   background: var(--bg-contrast);
 }
@@ -30,12 +30,12 @@
   gap: 10px;
   padding: 10px;
   border-radius: 5px;
-  backdrop-filter: var(--bg-effect);  
-  border: 1px solid var(--border);
+  backdrop-filter: var(--bg-effect);
   background: var(--bg-contrast);
 }
 
-.key, .value {
+.key,
+.value {
   width: 50%;
   white-space: nowrap;
   overflow: hidden;
@@ -63,7 +63,6 @@
   padding: 20px 10px;
   border-radius: 5px;
   font-size: 16px;
-  backdrop-filter: var(--bg-effect);  
-  border: 1px solid var(--border);
+  border: none;
   background: var(--bg-contrast);
 }

@@ -89,7 +89,7 @@ export default function Lesson({ data }) {
 
   return (
     <div
-      className={`${classes.root} ${status === lessonStatuses.CURRENT && classes.rootCurrent} ${status === lessonStatuses.COMPLETED && classes.rootCompleted}`}
+      className={`border ${classes.root} ${status === lessonStatuses.CURRENT && classes.rootCurrent} ${status === lessonStatuses.COMPLETED && classes.rootCompleted}`}
     >
       <div className={classes.titleBox}>
         <p className={classes.title}>

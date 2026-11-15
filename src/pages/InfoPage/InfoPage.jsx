@@ -2,20 +2,20 @@
 import Updates from "../../components/Updates";
 
 // utils
-import timeFormat from '../../utils/timeFormat';
+import timeFormat from "../../utils/timeFormat";
 
 // constants
-import updates from '../../constants/updates';
+import updates from "../../constants/updates";
 
 // styles
-import classes from './styles.module.css';
+import classes from "./styles.module.css";
 
 export default function InfoPage() {
   const { lastUpdateAt } = updates;
 
   return (
     <div className={classes.root}>
-      <div className={classes.lastUpdateDateContainer}>
+      <div className={`border ${classes.lastUpdateDateContainer}`}>
         <p className={classes.lastUpdateDate}>Թարմացվել է</p>
         <p className={classes.lastUpdateDate}>
           {timeFormat(lastUpdateAt)} առաջ
@@ -24,5 +24,5 @@ export default function InfoPage() {
 
       <Updates />
     </div>
-  )
+  );
 }

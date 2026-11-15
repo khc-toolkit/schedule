@@ -36,7 +36,7 @@ export default function SettingsPage() {
         />
       ))}
 
-      <Link to={routes.STORAGE} className={classes.link}>
+      <Link to={routes.STORAGE} className={`border ${classes.link}`}>
         <span>Տվյալներ</span>
         <GrStorage size="2.3rem" />
       </Link>
@@ -44,7 +44,7 @@ export default function SettingsPage() {
       <Link
         to={routes.INFO}
         onClick={updateInfoVersion}
-        className={classes.link}
+        className={`border ${classes.link}`}
       >
         <span>Ինֆո</span>
         <BsInfoCircle size="2.3rem" />
