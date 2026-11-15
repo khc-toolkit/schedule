@@ -1,1 +1,1 @@
-export { default } from './ThemePage';
+export { default } from "./ThemePage";

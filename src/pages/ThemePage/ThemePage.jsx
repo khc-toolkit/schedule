@@ -1,14 +1,14 @@
 // components
-import ThemeButton from '../../components/ThemeButton';
+import ThemeButton from "../../components/ThemeButton";
 
 // hooks
-import useTheme from '../../customHooks/useTheme.jsx';
+import useTheme from "../../customHooks/useTheme.jsx";
 
 // constants
-import themesData from '../../constants/themes.js';
+import themesData from "../../constants/themes.js";
 
 // styles
-import classes from './styles.module.css';
+import classes from "./styles.module.css";
 
 export default function ThemePage() {
   const [_theme, setTheme] = useTheme();
@@ -16,19 +16,17 @@ export default function ThemePage() {
 
   const onClickTheme = (className) => {
     setTheme(className);
-  }
+  };
 
   return (
     <div className={classes.root}>
-      {
-        buttons.map(themeData =>
-          <ThemeButton
-            key={themeData.theme}
-            themeData={themeData}
-            onClickTheme={onClickTheme}
-          />
-        )
-      }
+      {buttons.map((themeData) => (
+        <ThemeButton
+          key={themeData.theme}
+          themeData={themeData}
+          onClickTheme={onClickTheme}
+        />
+      ))}
     </div>
-  )
+  );
 }
