@@ -1,5 +1,6 @@
 // libs
 import { Routes, Route, Navigate } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
 // pages
 import HomePage from "./pages/HomePage";
@@ -9,7 +10,6 @@ import SchedulePage from "./pages/SchedulePage";
 import EventsPage from "./pages/EventsPage";
 import ScheduleWeekPage from "./pages/ScheduleWeekPage";
 import StoragePage from "./pages/StoragePage";
-import InfoPage from "./pages/InfoPage";
 import GeneralInfoPage from "./pages/GeneralInfoPage";
 
 // components
@@ -21,6 +21,8 @@ import { defaultRoute } from "./constants/routes";
 
 // general styles
 import "./app.css";
+
+const InfoPage = lazy(() => import("./pages/InfoPage"));
 
 function App() {
   return (
@@ -35,7 +37,14 @@ function App() {
           <Route path={routes.EVENTS} element={<EventsPage />} />
           <Route path={routes.SETTINGS} element={<SettingsPage />} />
           <Route path={routes.STORAGE} element={<StoragePage />} />
-          <Route path={routes.INFO} element={<InfoPage />} />
+          <Route
+            path={routes.INFO}
+            element={
+              <Suspense fallback={<div>Բեռնում․․</div>}>
+                <InfoPage />
+              </Suspense>
+            }
+          />
           <Route path={routes.GENERAL_INFO} element={<GeneralInfoPage />} />
         </Route>
       </Routes>
