@@ -6,37 +6,20 @@ import BeforeClass from "../BeforeClass";
 import Weekend from "../Weekend";
 import AfterClass from "../AfterClass";
 import Break from "../Break";
-import LessonController from "../LessonController";
+import Lesson from "../Lesson";
 import ShowWeekLessons from "../ShowWeekLessons";
 import NotificationCircle from "../NotificationCircle";
 import Navigation from "../Navigation";
 import EventCard from "../EventCard";
 import SettingsOption from "../SettingsOption";
-// import PracticeController from "../PracticeController";
+// import Practice from "../Practice";
 // import PracticePage from "../../pages/PracticePage";
-
-import themesData from "../../constants/themes";
 
 // styles
 import classes from "./styles.module.css";
 export default function AllComponentsPreview() {
   return (
-    <div
-      className={classes.root}
-      style={{ gridTemplateColumns: `repeat(${themesData.length}, 400px)` }}
-    >
-      {themesData.map((theme) => (
-        <AllVersions theme={theme.theme} key={theme.theme} />
-      ))}
-    </div>
-  );
-}
-
-function AllVersions({ theme }) {
-  return (
-    <div className={`colors_default ${theme} ${classes.version}`}>
-      <h2 className={classes.themeText}>{theme}</h2>
-
+    <div className={classes.version}>
       <div className={classes.buttons}>
         <button>Button</button>
         <button disabled>Button disabled</button>
@@ -61,7 +44,7 @@ function AllVersions({ theme }) {
       <SettingsOption optionData={{ name: "Some option" }} />
 
       {/* <PracticePage /> */}
-      {/* <PracticeController
+      {/* <Practice
         data={{
           teacher: "Galoyan S",
           b: "5",
@@ -73,7 +56,7 @@ function AllVersions({ theme }) {
         }}
       />
 
-      <PracticeController
+      <Practice
         data={{
           teacher: "Galoyan S",
           b: "5",
@@ -85,7 +68,7 @@ function AllVersions({ theme }) {
         }}
       />
 
-      <PracticeController
+      <Practice
         data={{
           teacher: "Galoyan S",
           b: "5",
@@ -97,7 +80,7 @@ function AllVersions({ theme }) {
         }}
       />
 
-      <PracticeController
+      <Practice
         data={{
           teacher: "Galoyan S",
           b: "5",
@@ -123,7 +106,7 @@ function AllVersions({ theme }) {
           place: "Place street",
         }}
       />
-      <LessonController
+      <Lesson
         data={{
           title: "Title",
           room: 40404,
@@ -134,7 +117,7 @@ function AllVersions({ theme }) {
         }}
       />
 
-      <LessonController
+      <Lesson
         data={{
           title: "Title",
           room: 40404,
@@ -145,7 +128,7 @@ function AllVersions({ theme }) {
         }}
       />
 
-      <LessonController
+      <Lesson
         data={{
           title: "Title",
           room: 40404,
@@ -156,7 +139,7 @@ function AllVersions({ theme }) {
         }}
       />
 
-      <LessonController
+      <Lesson
         data={{
           title: "Title",
           room: 40404,

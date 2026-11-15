@@ -4,8 +4,9 @@
   grid-template-columns: 1fr auto;
   align-items: center;
   padding: 20px 10px;
+  border-left: none;
+  border-right: none;
   background-color: var(--bg-contrast);
-  backdrop-filter: var(--bg-effect);
 }
 
 .optionName {
@@ -16,7 +17,7 @@
 
 .toggle {
   rotate: 180deg;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .toggleActive {

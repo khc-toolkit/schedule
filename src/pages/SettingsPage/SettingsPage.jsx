@@ -1,6 +1,5 @@
 // libs
 import { Link } from "react-router-dom";
-import { PiCircleHalfTiltFill } from "react-icons/pi";
 import { GrStorage } from "react-icons/gr";
 import { BsInfoCircle } from "react-icons/bs";
 
@@ -20,10 +19,6 @@ import SETTINGS from "../../constants/settings";
 import classes from "./styles.module.css";
 
 export default function SettingsPage() {
-  const [isShowThemeUpdate, updateThemeVersion] = useVersion(
-    VERSIONS.THEME.key,
-    VERSIONS.THEME.version,
-  );
   const [isShowInfoUpdate, updateInfoVersion] = useVersion(
     VERSIONS.INFO.key,
     VERSIONS.INFO.version,
@@ -41,17 +36,7 @@ export default function SettingsPage() {
         />
       ))}
 
-      <Link
-        to={routes.THEME}
-        onClick={updateThemeVersion}
-        className={classes.themeLink}
-      >
-        <span>Թեմաներ</span>
-        <PiCircleHalfTiltFill size="2.4rem" />
-        {isShowThemeUpdate && <NotificationCircle />}
-      </Link>
-
-      <Link to={routes.STORAGE} className={classes.themeLink}>
+      <Link to={routes.STORAGE} className={`border ${classes.link}`}>
         <span>Տվյալներ</span>
         <GrStorage size="2.3rem" />
       </Link>
@@ -59,7 +44,7 @@ export default function SettingsPage() {
       <Link
         to={routes.INFO}
         onClick={updateInfoVersion}
-        className={classes.themeLink}
+        className={`border ${classes.link}`}
       >
         <span>Ինֆո</span>
         <BsInfoCircle size="2.3rem" />

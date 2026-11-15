@@ -9,9 +9,9 @@ import classes from "./styles.module.css";
 
 export default function Update({ data }) {
   const { version, list } = data;
-  
+
   return (
-    <div className={classes.root}>
+    <div className={`border ${classes.root}`}>
       <h2 className={classes.version}>{version}</h2>
 
       <div className={classes.list}>

@@ -3,7 +3,6 @@
   border-radius: 10px;
   backdrop-filter: var(--bg-effect);
   background-color: var(--bg-contrast);
-  border: 1px solid var(--border);
 }
 
 .version {

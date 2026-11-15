@@ -45,9 +45,6 @@ export default function Lesson({ data }) {
   const { optionsValues } = settings;
 
   const interval = useRef(null);
-  const [isDisabledGradientLine] = useSettingsOption(
-    optionsValues.lessonLineDisabled,
-  );
 
   const [isDisabledIcons] = useSettingsOption(
     optionsValues.lessonIconsDisabled,
@@ -92,7 +89,7 @@ export default function Lesson({ data }) {
 
   return (
     <div
-      className={`${classes.root} ${status === lessonStatuses.CURRENT && classes.rootCurrent} ${status === lessonStatuses.COMPLETED && classes.rootCompleted}`}
+      className={`border ${classes.root} ${status === lessonStatuses.CURRENT && classes.rootCurrent} ${status === lessonStatuses.COMPLETED && classes.rootCompleted}`}
     >
       <div className={classes.titleBox}>
         <p className={classes.title}>
@@ -130,7 +127,6 @@ export default function Lesson({ data }) {
           </p>
         )}
       </div>
-      {!isDisabledGradientLine && <div className={classes.line}></div>}
     </div>
   );
 }

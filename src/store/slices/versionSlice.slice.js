@@ -3,7 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 // constants
 import VERSIONS from "../../constants/versions";
-import themesData from "../../constants/themes";
 
 const versionSlice = createSlice({
   name: "versionSlice",
@@ -23,9 +22,7 @@ const versionSlice = createSlice({
 
 export default versionSlice.reducer;
 
-export const { 
-  updateVersion,
-} = versionSlice.actions;
+export const { updateVersion } = versionSlice.actions;
 
 function initVersionsState() {
   const versions = {};
@@ -34,14 +31,7 @@ function initVersionsState() {
   for (const optionKey in VERSIONS) {
     const versionData = VERSIONS[optionKey];
     const { key } = versionData;
-    const value = +(JSON.parse(localStorage.getItem(key)));
-    versions[key] = value;
-  }
-
-  // themes version
-  for (const themeData of themesData) {
-    const { key } = themeData;
-    const value = +(JSON.parse(localStorage.getItem(key)));
+    const value = +JSON.parse(localStorage.getItem(key));
     versions[key] = value;
   }
 

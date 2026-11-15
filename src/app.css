@@ -1,13 +1,40 @@
-@import url("./css/default.css");
-@import url("./css/space.css");
-@import url("./css/glass.css");
-@import url("./css/gold_black.css");
-@import url("./css/cyber_slate.css");
-@import url("./css/testet.css");
-@import url("./css/moon.css");
-@import url("./css/artemis_ii.css");
-@import url("./css/new_2027_year.css");
-@import url("./css/frost.css");
+:root {
+  /* semantic layer */
+  --bg: #131313;
+  --bg-contrast: #333333;
+
+  --text: #ffffff;
+  --text-dim: #d8d8d8;
+  --text-negative: #fafafa;
+
+  --accent: #ffb60e;
+
+  --primary: #3d86f5;
+  --primary-shade: #2157a8;
+
+  --secondary: #30c2ae;
+  --secondary-shade: #179685;
+
+  /* button */
+  --button-bg: var(--bg-contrast);
+  --button-bg-disabled: #696969;
+
+  /* surfaces */
+  --surface: #00000080;
+  --border: #4e4e4e;
+
+  /* message */
+  --message-color: #e7e7e7;
+  --message-border-color: #f5bf41;
+  --message-bg: linear-gradient(135deg, #0000, 75%, #be922a);
+
+  /* lesson */
+  --lesson-timer-color: #1a1a1a;
+  --lesson-timer-bg: #c9c9c9;
+
+  /* notification */
+  --notification-bg: #ff0000;
+}
 
 * {
   margin: 0;
@@ -23,10 +50,6 @@ body {
   padding: 15px;
   color: var(--text);
   background: var(--bg);
-  background-image: var(--bg-image);
-  background-size: var(--bg-image-size);
-  background-position: var(--bg-image-position);
-  background-attachment: var(--bg-image-attachment);
 }
 
 button {
@@ -42,4 +65,9 @@ button:disabled {
   border-color: var(--border);
   color: var(--text-dim);
   background: var(--button-bg-disabled);
+}
+
+.border {
+  border-top: 2px solid var(--border);
+  border-bottom: 2px solid var(--surface);
 }

@@ -20,18 +20,21 @@ export default function Updates() {
   return (
     <div className={classes.root}>
       <div className={classes.versions}>
-        {
-          alwaysShowingUpdates.map((version, ind) => 
-            <Update data={version} key={ind} />
-          )
-        }
+        {alwaysShowingUpdates.map((version, ind) => (
+          <Update data={version} key={ind} />
+        ))}
 
         {isShowOldUpdates ? (
           hiddenUpdates.map((version, ind) => (
             <Update key={ind} data={version} />
           ))
         ) : (
-          <button className={classes.button} onClick={() => setIsShowUpdates(true)}>Տեսնել ավելի հին թարմացումները</button>
+          <button
+            className={`border ${classes.button}`}
+            onClick={() => setIsShowUpdates(true)}
+          >
+            Տեսնել ավելի հին թարմացումները
+          </button>
         )}
       </div>
     </div>

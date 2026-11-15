@@ -13,7 +13,6 @@
   padding: 20px 10px;
   background: var(--bg-contrast);
   backdrop-filter: var(--bg-effect);
-  border: 1px solid var(--border);
 }
 
 .versionContainer {
