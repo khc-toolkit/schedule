@@ -50,10 +50,6 @@ body {
   padding: 15px;
   color: var(--text);
   background: var(--bg);
-  background-image: var(--bg-image);
-  background-size: var(--bg-image-size);
-  background-position: var(--bg-image-position);
-  background-attachment: var(--bg-image-attachment);
 }
 
 button {
