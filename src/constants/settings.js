@@ -1,6 +1,6 @@
 const optionsValues = {
   lessonIconsDisabled: {
-    name: "Աջատել այքոնները դասի քարտի մեջ",
+    name: "Թաքցնել պատկերակները դասի քարտում",
     defaultValue: false,
     key: "s_lessonIconsDisabled",
   },
