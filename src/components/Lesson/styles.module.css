@@ -16,9 +16,6 @@
 }
 
 .rootCurrent {
-  .line {
-    background: var(--primary-gradient);
-  }
 }
 
 .titleBox {

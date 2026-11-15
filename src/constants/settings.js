@@ -1,10 +1,4 @@
 const optionsValues = {
-  lessonLineDisabled: {
-    name: "Անջատել դասի գրադիենտը",
-    defaultValue: false,
-    key: "s_lessonLineDisabled",
-  },
-
   lessonIconsDisabled: {
     name: "Աջատել այքոնները դասի քարտի մեջ",
     defaultValue: false,
