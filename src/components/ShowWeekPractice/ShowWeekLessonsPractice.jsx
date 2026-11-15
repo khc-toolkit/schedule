@@ -1,16 +1,16 @@
 // libs
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 
 // components
-import Weekend from '../Weekend';
-import PracticeController from '../PracticeController'
+import Weekend from "../Weekend";
+import Practice from "../Practice";
 
 // constants
-import practice from '../../constants/practice.js';
+import practice from "../../constants/practice.js";
 
 // styles
-import classes from './styles.module.css';
+import classes from "./styles.module.css";
 
 export default function ShowWeekPractices() {
   const [dayscheduleNum, setDayscheduleNum] = useState(() => {
@@ -29,31 +29,32 @@ export default function ShowWeekPractices() {
   return (
     <div className={classes.root}>
       <div className={classes.buttons}>
-        {
-          days.map((day, ind) =>
-            <button key={day} className={`${classes.button} ${ind === dayscheduleNum && classes.buttonActive}`} onClick={() => setDayscheduleNum(ind)}>{day}</button>
-          )
-        }
+        {days.map((day, ind) => (
+          <button
+            key={day}
+            className={`${classes.button} ${ind === dayscheduleNum && classes.buttonActive}`}
+            onClick={() => setDayscheduleNum(ind)}
+          >
+            {day}
+          </button>
+        ))}
       </div>
 
       <div className={classes.practices}>
-        { isWeekend && <Weekend /> }
-        
-        {
-          practice[dayscheduleNum]?.length === 0 ?
-            <p className={classes.noPracticeMsg}>Այս օրը պրակտիկա չկա</p>
-            :
-            practice[dayscheduleNum]?.map(
-              (practice, ind) => practice ?
-                <PracticeController
-                  key={ind}
-                  data={practice}
-                />
-                :
-                <React.Fragment key={ind}></React.Fragment>
-            )
-        }
+        {isWeekend && <Weekend />}
+
+        {practice[dayscheduleNum]?.length === 0 ? (
+          <p className={classes.noPracticeMsg}>Այս օրը պրակտիկա չկա</p>
+        ) : (
+          practice[dayscheduleNum]?.map((practice, ind) =>
+            practice ? (
+              <Practice key={ind} data={practice} />
+            ) : (
+              <React.Fragment key={ind}></React.Fragment>
+            ),
+          )
+        )}
       </div>
     </div>
-  )
+  );
 }

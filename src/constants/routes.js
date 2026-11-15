@@ -5,7 +5,6 @@ const routes = {
   SCHEDULE: "/schedule",
   SCHEDULE_WEEK: "/schedule_week",
   SETTINGS: "/settings",
-  THEME: "/theme",
   STORAGE: "/storage",
   INFO: "/info",
   GENERAL_INFO: "/general_info",

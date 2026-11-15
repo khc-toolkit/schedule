@@ -1,12 +1,11 @@
 # Smart Student Schedule 📅
 
-A modern, highly customizable web application for tracking university schedules. Designed to replace boring static tables with an interactive, themeable, and mobile-friendly dashboard.
+A modern, highly customizable web application for tracking university schedules. Designed to replace boring static tables with an interactive, and mobile-friendly dashboard.
 
 ## ✨ Features
 
 - **Smart Filtering**: Automatically displays the current, next, or remaining lessons based on the time of day.
 - **Dynamic Lesson Types**: Distinct logic for single lessons, double lessons, and practice sessions via specialized JavaScript classes.
-- **Heavy Customization**: Multiple UI themes including
 - **Time Tracking**: Built-in timers to show how much time is left before or during a class.
 - **Weekend & Break Awareness**: Specialized components to handle non-academic time gracefully.
 
@@ -16,11 +15,7 @@ A modern, highly customizable web application for tracking university schedules.
 
 - **Styling**: CSS Modules & Global Theme context
 
-- **State & Logic**: Custom Hooks (`useTheme`, `useSettingsOption`), OOP (Class-based data modeling)
-
-## 🎨 Themes
-
-The app supports a variety of visual styles to suit any mood
+- **State & Logic**: Custom Hooks, (Class-based data modeling)
 
 ## 📖 Architecture Overview
 

@@ -1,19 +1,19 @@
 // libs
-import React from 'react';
-import { useCallback, useState } from 'react';
+import React from "react";
+import { useCallback, useState } from "react";
 
 // components
-import LessonController from '../LessonController/LessonController.jsx';
+import Lesson from "../Lesson/Lesson.jsx";
 // import DoubleLessonChanger from '../DoubleLessonChanger/DoubleLessonChanger.jsx';
 
 // constants
-import lessons from '../../constants/lessons';
+import lessons from "../../constants/lessons";
 
 // utils
-import isAcademicTopLessonDay from '../../utils/isAcademicTopLessonDay.js'
+import isAcademicTopLessonDay from "../../utils/isAcademicTopLessonDay.js";
 
 // styles
-import classes from './styles.module.css';
+import classes from "./styles.module.css";
 
 export default function ShowWeekLessons() {
   const isTopLesson = isAcademicTopLessonDay();
@@ -40,26 +40,29 @@ export default function ShowWeekLessons() {
       /> */}
 
       <div className={classes.lessons}>
-        {
-          lessons[dayscheduleNum]?.map(
-            (lesson, ind) => {
-              return lesson?.getData(isTopLesson) ?
-                <LessonController
-                  data={{ ...lesson?.getData(isTopLesson), status: "default" }}
-                  key={`${lesson.title} ${ind}`}
-                /> : <React.Fragment key={ind}></React.Fragment>
-            }
-          )
-        }
+        {lessons[dayscheduleNum]?.map((lesson, ind) => {
+          return lesson?.getData(isTopLesson) ? (
+            <Lesson
+              data={{ ...lesson?.getData(isTopLesson), status: "default" }}
+              key={`${lesson.title} ${ind}`}
+            />
+          ) : (
+            <React.Fragment key={ind}></React.Fragment>
+          );
+        })}
       </div>
 
       <div className={classes.buttons}>
-        {
-          days.map((day, ind) =>
-            <button key={day} className={`${classes.button} ${ind === dayscheduleNum && classes.buttonActive}`} onClick={() => setDayscheduleNum(ind)}>{day}</button>
-          )
-        }
+        {days.map((day, ind) => (
+          <button
+            key={day}
+            className={`${classes.button} ${ind === dayscheduleNum && classes.buttonActive}`}
+            onClick={() => setDayscheduleNum(ind)}
+          >
+            {day}
+          </button>
+        ))}
       </div>
     </div>
-  )
+  );
 }

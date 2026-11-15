@@ -7,7 +7,6 @@ import HomePage from "./pages/HomePage";
 import SettingsPage from "./pages/SettingsPage";
 import PracticePage from "./pages/PracticePage";
 import SchedulePage from "./pages/SchedulePage";
-import ThemePage from "./pages/ThemePage";
 import EventsPage from "./pages/EventsPage";
 import ScheduleWeekPage from "./pages/ScheduleWeekPage";
 import StoragePage from "./pages/StoragePage";
@@ -17,9 +16,6 @@ import GeneralInfoPage from "./pages/GeneralInfoPage";
 // components
 import Navigation from "./components/Navigation";
 
-// custom hooks
-import useTheme from "./customHooks/useTheme";
-
 // constants
 import routes from "./constants/routes";
 import { defaultRoute } from "./constants/routes";
@@ -28,13 +24,6 @@ import { defaultRoute } from "./constants/routes";
 import "./app.css";
 
 function App() {
-  const [theme] = useTheme();
-
-  useEffect(() => {
-    document.body.classList = ["colors_default"];
-    document.body.classList.add(theme);
-  }, []);
-
   return (
     <div>
       <Routes>
@@ -46,7 +35,6 @@ function App() {
           <Route path={routes.SCHEDULE_WEEK} element={<ScheduleWeekPage />} />
           <Route path={routes.EVENTS} element={<EventsPage />} />
           <Route path={routes.SETTINGS} element={<SettingsPage />} />
-          <Route path={routes.THEME} element={<ThemePage />} />
           <Route path={routes.STORAGE} element={<StoragePage />} />
           <Route path={routes.INFO} element={<InfoPage />} />
           <Route path={routes.GENERAL_INFO} element={<GeneralInfoPage />} />
