@@ -5,34 +5,28 @@ import { useState } from "react";
 import Update from "../Update";
 
 // constants
-import updates from "../../constants/updates";
+import updates from "../../updates/latest";
 
 // styles
 import classes from "./styles.module.css";
 
 export default function Updates() {
-  const [isShowOldUpdates, setIsShowUpdates] = useState(false);
-  const { versions } = updates;
+  const [versions, setVersions] = useState(updates.versions);
 
-  const alwaysShowingUpdates = versions.slice(0, 3);
-  const hiddenUpdates = versions.slice(3, versions.length);
+  const loadUpdates = async () => {
+    const { default: updates } = await import("../../updates/updates-2026");
+    setVersions((prev) => [...prev, ...updates]);
+  };
 
   return (
     <div className={classes.root}>
       <div className={classes.versions}>
-        {alwaysShowingUpdates.map((version, ind) => (
+        {versions.map((version, ind) => (
           <Update data={version} key={ind} />
         ))}
 
-        {isShowOldUpdates ? (
-          hiddenUpdates.map((version, ind) => (
-            <Update key={ind} data={version} />
-          ))
-        ) : (
-          <button
-            className={`border ${classes.button}`}
-            onClick={() => setIsShowUpdates(true)}
-          >
+        {versions.length === 3 && (
+          <button className={`border ${classes.button}`} onClick={loadUpdates}>
             Տեսնել ավելի հին թարմացումները
           </button>
         )}

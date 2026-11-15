@@ -2,7 +2,7 @@
 import React from "react";
 
 // constants
-import { listTypes } from "../../constants/updates";
+import { listTypes } from "../../updates/latest";
 
 // styles
 import classes from "./styles.module.css";

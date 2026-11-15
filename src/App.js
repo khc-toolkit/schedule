@@ -40,7 +40,21 @@ function App() {
           <Route
             path={routes.INFO}
             element={
-              <Suspense fallback={<div>Բեռնում․․</div>}>
+              <Suspense
+                fallback={
+                  <div
+                    className="border"
+                    style={{
+                      padding: "20px 0",
+                      textAlign: "center",
+                      background: "var(--bg-contrast)",
+                      borderRadius: 10,
+                    }}
+                  >
+                    Բեռնում․․
+                  </div>
+                }
+              >
                 <InfoPage />
               </Suspense>
             }

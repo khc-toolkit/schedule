@@ -5,7 +5,7 @@ import Updates from "../../components/Updates";
 import timeFormat from "../../utils/timeFormat";
 
 // constants
-import updates from "../../constants/updates";
+import updates from "../../updates/latest.js";
 
 // styles
 import classes from "./styles.module.css";
