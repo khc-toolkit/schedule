@@ -21,10 +21,6 @@ export default function Storage() {
 
   return (
     <div className={classes.root}>
-      <p className={`border ${classes.amount}`}>
-        Ընդհանուր կա {storageLength} տվյալ
-      </p>
-
       <div className={classes.values}>
         {storageKeys.length > 0 &&
           storageKeys.map((key) => (

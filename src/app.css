@@ -15,6 +15,9 @@
   --secondary: #30c2ae;
   --secondary-shade: #179685;
 
+  /* base */
+  --error: #8a3535;
+
   /* button */
   --button-bg: var(--bg-contrast);
   --button-bg-disabled: #696969;
@@ -68,6 +71,6 @@ button:disabled {
 }
 
 .border {
-  border-top: 2px solid var(--border);
+  border-top: 2px solid #ffffff2c;
   border-bottom: 2px solid var(--surface);
 }
