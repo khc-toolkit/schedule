@@ -1,5 +1,5 @@
 .root {
-  backdrop-filter: var(--bg-effect);
+  height: 100%;
 }
 
 .message {
@@ -15,4 +15,3 @@
   background: var(--message-bg);
   border: 2px solid var(--message-border-color);
 }
-

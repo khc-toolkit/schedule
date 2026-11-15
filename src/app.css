@@ -66,3 +66,8 @@ button:disabled {
   color: var(--text-dim);
   background: var(--button-bg-disabled);
 }
+
+.border {
+  border-top: 2px solid var(--border);
+  border-bottom: 2px solid var(--surface);
+}
