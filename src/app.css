@@ -24,9 +24,9 @@
   --border: #4e4e4e;
 
   /* message */
-  --message-color: #073107;
-  --message-border-color: #61c469;
-  --message-bg: linear-gradient(135deg, var(--bg-contrast), 75%, #61c469);
+  --message-color: #e7e7e7;
+  --message-border-color: #f5bf41;
+  --message-bg: linear-gradient(135deg, #0000, 75%, #be922a);
 
   /* lesson */
   --lesson-timer-color: #1a1a1a;
