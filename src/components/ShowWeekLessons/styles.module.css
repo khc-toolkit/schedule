@@ -24,12 +24,15 @@
 .button {
   padding: 15px 0;
   margin: 10px 0;
+  border: none;
   border-color: var(--border);
   backdrop-filter: var(--bg-effect);
 }
 
 .buttonActive {
-  box-shadow: inset 0 4px 0 var(--accent);
+  box-shadow:
+    inset 0 4px 0px var(--accent),
+    inset 0 -2px 2px var(--surface) !important;
   border-color: var(--accent);
 }
 

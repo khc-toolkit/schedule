@@ -71,6 +71,7 @@ button:disabled {
 }
 
 .border {
-  border-top: 2px solid #ffffff2c;
-  border-bottom: 2px solid var(--surface);
+  box-shadow:
+    inset 0 2px 2px #ffffff2c,
+    inset 0 -2px 2px var(--surface);
 }
