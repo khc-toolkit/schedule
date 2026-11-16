@@ -11,25 +11,21 @@ import classes from "./styles.module.css";
 export default function BeforeClass({ startedTime }) {
   const [timer, setTimer] = useState(null);
 
-  useEffect(() => {
+  const calculateTimer = () => {
     const startTime = getDateTime(startedTime);
     const currentTime = new Date().getTime();
     setTimer(Math.floor((startTime - currentTime) / 1000));
-  }, []);
+  };
 
   useEffect(() => {
-    if (timer < 1) {
-      return;
-    }
+    calculateTimer();
 
-    const intervalId = setInterval(() => {
-      setTimer((prev) => prev - 1);
-    }, 1000);
+    const intervalId = setInterval(calculateTimer, 1000);
 
     return () => {
       clearInterval(intervalId);
     };
-  }, [timer]);
+  }, []);
 
   return (
     <div className={classes.root}>
