@@ -1,7 +1,7 @@
 // images
 import themeFrost from "../assets/img/updates/theme-frost.png";
 
-const lastUpdateAt = "2026-11-16T08:15:16.996Z"
+const lastUpdateAt = "2026-11-19T06:20:54.144Z"
 
 export const listTypes = {
   text: "text",
