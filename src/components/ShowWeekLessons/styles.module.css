@@ -19,7 +19,6 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 5px;
   border-radius: 20px;
-  overflow: hidden;
   background-color: var(--bg-contrast);
   border: 1px solid var(--border);
 }
@@ -33,7 +32,8 @@
 }
 
 .buttonActive {
-  background: var(--accent);
+  background: linear-gradient(90deg, #fcd24c, #ebb40a);
+  box-shadow: 0 0 5px 5px #fcd34c41;
   border-radius: 20px;
   color: var(--text-negative);
 }
