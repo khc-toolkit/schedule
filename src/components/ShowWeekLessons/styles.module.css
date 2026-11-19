@@ -24,7 +24,6 @@
   margin: 10px 0;
   border: none;
   border-color: var(--border);
-  backdrop-filter: var(--bg-effect);
 }
 
 .buttonActive {

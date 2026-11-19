@@ -7,7 +7,6 @@
   z-index: 100;
   background: var(--bg-contrast);
   border-top: 1px solid var(--border);
-  backdrop-filter: var(--bg-effect);
 }
 
 .panel {
@@ -27,12 +26,12 @@
   padding: 15px;
   user-select: none;
   -webkit-user-select: none; /* Safari, Chrome */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* IE/Edge */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
   border-radius: 0;
   color: var(--text);
   svg {
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 

@@ -9,7 +9,6 @@
   margin: auto;
   margin-bottom: 10px;
   background: var(--bg-contrast);
-  backdrop-filter: var(--bg-effect);
   border: 1px solid var(--border);
 
   h2 {

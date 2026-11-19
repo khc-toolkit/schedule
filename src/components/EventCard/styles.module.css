@@ -4,7 +4,6 @@
 
   border: 1px solid var(--border);
   background: var(--bg-contrast);
-  backdrop-filter: var(--bg-effect);
 }
 
 .specialTitle {

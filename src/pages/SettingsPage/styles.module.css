@@ -19,5 +19,4 @@
   border-radius: 10px;
   color: var(--text);
   background: var(--bg-contrast);
-  backdrop-filter: var(--bg-effect);
 }

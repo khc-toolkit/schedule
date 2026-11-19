@@ -8,11 +8,10 @@
   padding: 25px 0;
   /* background: none; */
   border-color: var(--primaryColor_2);
-  backdrop-filter: var(--bg-effect);
   position: relative;
 }
 
-.statusText{
+.statusText {
   font-weight: bold;
 }
 

@@ -15,7 +15,6 @@
   padding: 15px 0;
   margin: 10px 0;
   border-color: var(--border);
-  backdrop-filter: var(--bg-effect);
 }
 
 .buttonActive {
@@ -35,6 +34,5 @@
   padding: 15px 10px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  backdrop-filter: var(--bg-effect);
   background-color: var(--bg-contrast);
 }
