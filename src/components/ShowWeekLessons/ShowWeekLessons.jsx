@@ -56,7 +56,7 @@ export default function ShowWeekLessons() {
         {days.map((day, ind) => (
           <button
             key={day}
-            className={`border ${classes.button} ${ind === dayscheduleNum && classes.buttonActive}`}
+            className={`${classes.button} ${ind === dayscheduleNum && classes.buttonActive}`}
             onClick={() => setDayscheduleNum(ind)}
           >
             {day}
