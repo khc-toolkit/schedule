@@ -39,7 +39,7 @@ export default function GeneralInfoPage() {
       </div>
 
       <div className={classes.items}>
-        <h2>Շաբաթական ունենք</h2>
+        <h2>Շաբաթական դասաժամ</h2>
         {Object.keys(items)
           .sort((a, b) => items[b] - items[a])
           .map((itemName) => (

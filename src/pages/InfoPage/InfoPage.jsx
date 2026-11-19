@@ -15,10 +15,9 @@ export default function InfoPage() {
 
   return (
     <div className={classes.root}>
-      <div className={`border ${classes.lastUpdateDateContainer}`}>
-        <p className={classes.lastUpdateDate}>Թարմացվել է</p>
+      <div className={` ${classes.lastUpdateDateContainer}`}>
         <p className={classes.lastUpdateDate}>
-          {timeFormat(lastUpdateAt)} առաջ
+          Թարմացվել է {timeFormat(lastUpdateAt)} առաջ
         </p>
       </div>
 
