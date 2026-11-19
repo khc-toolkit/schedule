@@ -122,7 +122,7 @@ export default function Navigation() {
           className={`${classes.button} ${isSettingsRouter && classes.activeTab}`}
         >
           {isSettingsRouter ? <IoSettingsSharp /> : <IoSettingsOutline />}
-          {isSettingsUpdated && <NotificationCircle />}
+          {isSettingsUpdated && <NotificationCircle isLeftSide={true} />}
         </Link>
       </div>
     </div>

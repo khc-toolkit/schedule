@@ -6,3 +6,7 @@
   border-radius: 50%;
   background-color: var(--notification-bg);
 }
+
+.leftSide {
+  right: 0;
+}
