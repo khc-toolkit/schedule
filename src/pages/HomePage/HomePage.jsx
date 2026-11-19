@@ -1,11 +1,11 @@
 // libs
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
 // components
-import Header from '../../components/Header';
+import Header from "../../components/Header";
 
 // styles
-import classes from './styles.module.css';
+import classes from "./styles.module.css";
 
 export default function HomePage() {
   return (
@@ -13,5 +13,5 @@ export default function HomePage() {
       <Header />
       <Outlet />
     </div>
-  )
+  );
 }

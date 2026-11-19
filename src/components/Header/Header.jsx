@@ -23,9 +23,39 @@ export default function Header() {
 
   return (
     <header className={classes.root}>
+      <Lights />
       <h1 className={classes.headerText}>
         {routeLabels[pathname] ?? "(none)"}
       </h1>
     </header>
+  );
+}
+
+function Lights() {
+  const lights = [
+    { color: "#FF3B30", rotate: "-8", shadow: "#FF3B3080" },
+    { color: "#3478F6", rotate: "6", shadow: "#3478F680" },
+    { color: "#FFD60A", rotate: "-5", shadow: "#FFD60A80" },
+    { color: "#34C759", rotate: "9", shadow: "#34C75980" },
+    { color: "#FF3B30", rotate: "-4", shadow: "#FF3B3080" },
+    { color: "#3478F6", rotate: "7", shadow: "#3478F680" },
+    { color: "#FFD60A", rotate: "-9", shadow: "#FFD60A80" },
+    { color: "#34C759", rotate: "9", shadow: "#34C75980" },
+  ];
+
+  return (
+    <div className={classes.lights}>
+      {lights.map((l, ind) => (
+        <div
+          className={classes.light}
+          key={ind}
+          style={{
+            backgroundColor: l.color,
+            transform: `rotate(${l.rotate}deg)`,
+            boxShadow: `0 0 15px 8px ${l.shadow}`,
+          }}
+        ></div>
+      ))}
+    </div>
   );
 }

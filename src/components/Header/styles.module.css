@@ -11,7 +11,40 @@
   z-index: 100;
   overflow: hidden;
   background: var(--bg-contrast);
+  /* backdrop-filter: blur(20px); */
   border-bottom: 1px solid var(--border);
 }
 
-/* .headerText {} */
+.headerText {
+  text-shadow: 0 0 5px #ffffff8f;
+}
+
+.lights {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+}
+
+.light {
+  height: 30px;
+  width: 12px;
+  border-radius: 5px 5px 100% 100%;
+  translate: 0 -5px;
+  animation: light 3s infinite;
+}
+
+.light:nth-child(even) {
+  animation-delay: 2s;
+}
+
+@keyframes light {
+  50% {
+    background-color: gray;
+    box-shadow: none;
+  }
+}
