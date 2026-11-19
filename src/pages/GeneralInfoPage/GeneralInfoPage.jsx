@@ -29,7 +29,6 @@ export default function GeneralInfoPage() {
     <div className={classes.root}>
       <div className={classes.teachers}>
         <h2>Դասախոսներ</h2>
-
         {Object.keys(teachers).map((teacher, ind) => (
           <div key={ind} className={classes.teacher}>
             <p className={classes.teacherName}>{teacher}</p>
