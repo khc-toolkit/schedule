@@ -16,7 +16,13 @@
 }
 
 .headerText {
+  transform: translateY(5px);
+  font-size: 1.7rem;
   text-shadow: 0 0 5px #ffffff8f;
+}
+
+.headerText:has(+ .lights) {
+  color: red;
 }
 
 .lights {
@@ -40,6 +46,13 @@
 
 .light:nth-child(even) {
   animation-delay: 2s;
+}
+
+.light:nth-child(2),
+.light:nth-child(3),
+.light:nth-child(5),
+.light:nth-child(6) {
+  translate: 0 -10px;
 }
 
 @keyframes light {
