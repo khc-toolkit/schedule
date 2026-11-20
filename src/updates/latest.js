@@ -10,7 +10,13 @@ const updates = {
   versions: [
     {
       version: "1.21.1",
-      list: [[listTypes.text, "Միացված է ամանորյա թեման"]],
+      list: [
+        [listTypes.text, "Միացված է ամանորյա թեման"],
+        [listTypes.text, "Ավելացված է լույսեր"],
+        [listTypes.text, "Ավելացված է ձյուն"],
+        [listTypes.text, "Ավելացված է ձյունը անջատելու կարգավորում"],
+        [listTypes.text, "Ավելացված է լույսեր անջատելու կարգավորում"],
+      ],
     },
     {
       version: "1.21.0",
