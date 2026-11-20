@@ -1,0 +1,36 @@
+.root {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.flake {
+  position: absolute;
+  top: -15px;
+  border-radius: 50%;
+
+  animation: snowfall linear forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(var(--drift), 105vh, 0);
+    opacity: 0;
+  }
+}
