@@ -4,8 +4,16 @@ import { useLocation } from "react-router-dom";
 // constants
 import routes from "../../constants/routes";
 
+// config
+import SETTINGS from "../../constants/settings";
+
+// hooks
+import useSettingsOption from "../../customHooks/useSettingsOption";
+
 // styles
 import classes from "./styles.module.css";
+
+const { optionsValues } = SETTINGS;
 
 export default function Header() {
   const { pathname } = useLocation();
@@ -32,6 +40,8 @@ export default function Header() {
 }
 
 function Lights() {
+  const [isOffLIghts] = useSettingsOption(optionsValues.new_year_lights);
+
   const lights = [
     { color: "#FF3B30", rotate: "-8", shadow: "#FF3B3080" },
     { color: "#3478F6", rotate: "6", shadow: "#3478F680" },
@@ -47,7 +57,7 @@ function Lights() {
     <div className={classes.lights}>
       {lights.map((l, ind) => (
         <div
-          className={classes.light}
+          className={`${classes.light} ${isOffLIghts && classes.offLights}`}
           key={ind}
           style={{
             backgroundColor: l.color,

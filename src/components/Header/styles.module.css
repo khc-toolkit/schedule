@@ -55,6 +55,12 @@
   translate: 0 -10px;
 }
 
+.offLights {
+  animation: none;
+  background-color: gray !important;
+  box-shadow: none !important;
+}
+
 @keyframes light {
   50% {
     background-color: gray;
