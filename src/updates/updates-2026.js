@@ -18,10 +18,18 @@ import themeMoonImg from "../assets/img/updates/theme-moon.png";
 import artemis2Img from "../assets/img/updates/theme-artemis_ii.png";
 import modeImg from "../assets/img/updates/mode.png";
 import eventsImg from "../assets/img/updates/events.png";
+import themeFrost from "../assets/img/updates/theme-frost.png";
 
 import { listTypes } from "./latest";
 
 const updates = [
+  {
+    version: "1.19.2",
+    list: [
+      [listTypes.text, "Ավելացվել է Frost նոր թեման։"],
+      [listTypes.img, themeFrost],
+    ],
+  },
   {
     version: "1.19.1",
     list: [[listTypes.text, "Ուղղվել է ժամանակաչափի սխալը։"]],

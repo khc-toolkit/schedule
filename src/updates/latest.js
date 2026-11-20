@@ -1,7 +1,4 @@
-// images
-import themeFrost from "../assets/img/updates/theme-frost.png";
-
-const lastUpdateAt = "2026-11-19T06:20:54.144Z"
+const lastUpdateAt = "2026-11-19T06:20:54.144Z";
 
 export const listTypes = {
   text: "text",
@@ -11,6 +8,10 @@ export const listTypes = {
 const updates = {
   lastUpdateAt,
   versions: [
+    {
+      version: "1.21.1",
+      list: [[listTypes.text, "Միացված է ամանորյա թեման"]],
+    },
     {
       version: "1.21.0",
       list: [
@@ -24,13 +25,6 @@ const updates = {
         [listTypes.text, "Դասի քարտում ավելացվել են պատկերակներ։"],
         [listTypes.text, "Ավելացվել է պատկերակներն անջատելու կարգավորում։"],
         [listTypes.text, "Ավելացվել է «Ընդհանուր տեղեկություն» էջը։"],
-      ],
-    },
-    {
-      version: "1.19.2",
-      list: [
-        [listTypes.text, "Ավելացվել է Frost նոր թեման։"],
-        [listTypes.img, themeFrost],
       ],
     },
   ],
