@@ -19,7 +19,7 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 5px;
   border-radius: 20px;
-  background-color: var(--bg-contrast);
+  background: var(--bg-contrast);
   border: 1px solid var(--border);
 }
 
@@ -33,7 +33,7 @@
 
 .buttonActive {
   background: linear-gradient(90deg, #fcd24c, #ebb40a);
-  box-shadow: 0 0 5px 5px #fcd34c41;
+  box-shadow: 0 0 10px 5px #fcd34c21;
   border-radius: 20px;
   color: var(--text-negative);
 }

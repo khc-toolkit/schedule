@@ -1,7 +1,7 @@
 .root {
   padding: 10px;
   border-radius: 10px;
-  background-color: var(--bg-contrast);
+  background: var(--bg-contrast);
 }
 
 .version {

@@ -1,7 +1,7 @@
 :root {
   /* semantic layer */
   --bg: radial-gradient(circle at 50% 10%, #122e20 30%, #0c140e);
-  --bg-contrast: #0c1f17;
+  --bg-contrast: linear-gradient(#071b13, #022413);
 
   --text: #ffffff;
   --text-dim: #d8d8d8;
