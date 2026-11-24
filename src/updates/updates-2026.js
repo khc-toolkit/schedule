@@ -24,6 +24,14 @@ import { listTypes } from "./latest";
 
 const updates = [
   {
+    version: "1.20.0",
+    list: [
+      [listTypes.text, "Դասի քարտում ավելացվել են պատկերակներ։"],
+      [listTypes.text, "Ավելացվել է պատկերակներն անջատելու կարգավորում։"],
+      [listTypes.text, "Ավելացվել է «Ընդհանուր տեղեկություն» էջը։"],
+    ],
+  },
+  {
     version: "1.19.2",
     list: [
       [listTypes.text, "Ավելացվել է Frost նոր թեման։"],

@@ -1,4 +1,4 @@
-const lastUpdateAt = "2026-11-24T18:33:17.798Z"
+const lastUpdateAt = "2026-11-24T18:33:17.798Z";
 
 export const listTypes = {
   text: "text",
@@ -8,6 +8,17 @@ export const listTypes = {
 const updates = {
   lastUpdateAt,
   versions: [
+    {
+      version: "1.22.0",
+      list: [
+        [listTypes.text, "Ինֆոյի էջը տեղափոխվել է «Ընդհանուր ինֆո» բաժին"],
+        [listTypes.text, "«Ընդհանուր ինֆո» էջը բաժանվել է առանձին բաժինների"],
+        [
+          listTypes.text,
+          "Ավելացվել է նոր էջ՝ անհատական աշխատանքի ռեսուրսների համար",
+        ],
+      ],
+    },
     {
       version: "1.21.1",
       list: [
@@ -23,14 +34,6 @@ const updates = {
       list: [
         [listTypes.text, "Հեռացվել է թեմաները փոխելու հնարավորությունը։"],
         [listTypes.text, "Թարմացվել է մի քանի էլէմենտի ոճերը։"],
-      ],
-    },
-    {
-      version: "1.20.0",
-      list: [
-        [listTypes.text, "Դասի քարտում ավելացվել են պատկերակներ։"],
-        [listTypes.text, "Ավելացվել է պատկերակներն անջատելու կարգավորում։"],
-        [listTypes.text, "Ավելացվել է «Ընդհանուր տեղեկություն» էջը։"],
       ],
     },
   ],
