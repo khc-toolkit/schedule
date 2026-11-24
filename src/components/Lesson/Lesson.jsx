@@ -21,7 +21,7 @@ import classes from "./styles.module.css";
 
 export default function Lesson({ data }) {
   const title = data?.title;
-  const teacher = data?.teacher;
+  const lecturers = data?.lecturers;
   const room = data?.room;
   const start = data?.start;
   const end = data?.end;
@@ -97,9 +97,9 @@ export default function Lesson({ data }) {
         </p>
       </div>
 
-      <div className={classes.teacherBox}>
+      <div className={classes.lecturersBox}>
         {!isDisabledIcons && <MdOutlinePersonOutline />}
-        <p className={classes.teacher}>{teacher}</p>
+        <p className={classes.lecturers}>{lecturers}</p>
       </div>
 
       <div className={classes.room}>

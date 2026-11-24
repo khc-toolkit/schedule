@@ -6,12 +6,12 @@ import lessonStatuses from "../constants/lessonStatuses.js";
 import lessonsTimes from "../constants/lessonsTimes.js";
 
 export default class SingleLesson extends Lesson {
-  constructor(title, room, teacher) {
+  constructor(title, room, lecturers) {
     super();
 
     this.title = title;
     this.room = room;
-    this.teacher = teacher;
+    this.lecturers = lecturers;
     this.status = lessonStatuses.DEFAULT;
     this.type = "";
     this.subGroup = -1;

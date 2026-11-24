@@ -6,15 +6,15 @@ import classes from "./styles.module.css";
 
 export default function GeneralInfoPage() {
   const allLessonsAllDays = [];
-  const teachers = {};
+  const lecturerss = {};
   const items = {};
 
   lessons.forEach((weekLesson) =>
     weekLesson.forEach((lesson) => {
       allLessonsAllDays.push(lesson);
 
-      if (!teachers[lesson.teacher]) {
-        teachers[lesson.teacher] = lesson.title;
+      if (!lecturerss[lesson.lecturers]) {
+        lecturerss[lesson.lecturers] = lesson.title;
       }
 
       if (items[lesson.title]) {
@@ -27,12 +27,12 @@ export default function GeneralInfoPage() {
 
   return (
     <div className={classes.root}>
-      <div className={classes.teachers}>
+      <div className={classes.lecturerss}>
         <h2>Դասախոսներ</h2>
-        {Object.keys(teachers).map((teacher, ind) => (
-          <div key={ind} className={classes.teacher}>
-            <p className={classes.teacherName}>{teacher}</p>
-            <p className={classes.teacherTitle}>{teachers[teacher]}</p>
+        {Object.keys(lecturerss).map((lecturers, ind) => (
+          <div key={ind} className={classes.lecturers}>
+            <p className={classes.lecturersName}>{lecturers}</p>
+            <p className={classes.lecturersTitle}>{lecturerss[lecturers]}</p>
           </div>
         ))}
       </div>

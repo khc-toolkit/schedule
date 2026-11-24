@@ -46,7 +46,7 @@ export default function AllComponentsPreview() {
       {/* <PracticePage /> */}
       {/* <Practice
         data={{
-          teacher: "Galoyan S",
+          lecturers: "Galoyan S",
           b: "5",
           f: "10",
           r: "9",
@@ -58,7 +58,7 @@ export default function AllComponentsPreview() {
 
       <Practice
         data={{
-          teacher: "Galoyan S",
+          lecturers: "Galoyan S",
           b: "5",
           f: "10",
           r: "9",
@@ -70,7 +70,7 @@ export default function AllComponentsPreview() {
 
       <Practice
         data={{
-          teacher: "Galoyan S",
+          lecturers: "Galoyan S",
           b: "5",
           f: "10",
           r: "9",
@@ -82,7 +82,7 @@ export default function AllComponentsPreview() {
 
       <Practice
         data={{
-          teacher: "Galoyan S",
+          lecturers: "Galoyan S",
           b: "5",
           f: "10",
           r: "9",
@@ -110,7 +110,7 @@ export default function AllComponentsPreview() {
         data={{
           title: "Title",
           room: 40404,
-          teacher: "Galoyan S",
+          lecturers: "Galoyan S",
           start: "09:30",
           end: "23:00",
           status: "current",
@@ -121,7 +121,7 @@ export default function AllComponentsPreview() {
         data={{
           title: "Title",
           room: 40404,
-          teacher: "Galoyan S",
+          lecturers: "Galoyan S",
           start: "11:00",
           end: "09:30",
           status: "default",
@@ -132,7 +132,7 @@ export default function AllComponentsPreview() {
         data={{
           title: "Title",
           room: 40404,
-          teacher: "Galoyan S",
+          lecturers: "Galoyan S",
           start: "12:50",
           end: "09:30",
           status: "default",
@@ -143,7 +143,7 @@ export default function AllComponentsPreview() {
         data={{
           title: "Title",
           room: 40404,
-          teacher: "Galoyan S",
+          lecturers: "Galoyan S",
           start: "14:20",
           end: "09:30",
           status: "default",

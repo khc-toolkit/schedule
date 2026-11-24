@@ -2,7 +2,7 @@
   display: block;
   grid-template-areas:
     "header header"
-    "teacher teacher"
+    "lecturers lecturers"
     "room time";
   gap: 5px;
   padding: 1rem 1.7rem 1rem 1rem;
@@ -26,7 +26,7 @@
   font-size: 18px;
 }
 
-.teacherBox,
+.lecturersBox,
 .room {
   display: flex;
   gap: 5px;
@@ -34,16 +34,16 @@
   color: var(--text-dim);
 }
 
-.teacherBox {
+.lecturersBox {
   margin-bottom: 8px;
 }
 
-.teacher,
+.lecturers,
 .room {
   color: var(--text-dim);
 }
 
-.teacher {
+.lecturers {
 }
 .room {
 }
