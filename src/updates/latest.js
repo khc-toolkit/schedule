@@ -1,4 +1,4 @@
-const lastUpdateAt = "2026-11-20T17:35:24.542Z"
+const lastUpdateAt = "2026-11-24T18:33:17.798Z"
 
 export const listTypes = {
   text: "text",
