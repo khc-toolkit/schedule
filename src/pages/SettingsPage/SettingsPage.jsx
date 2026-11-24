@@ -1,30 +1,19 @@
 // libs
 import { Link } from "react-router-dom";
 import { GrStorage } from "react-icons/gr";
-import { BsInfoCircle } from "react-icons/bs";
 import { RiTelegram2Fill } from "react-icons/ri";
 
 // components
 import SettingsOption from "../../components/SettingsOption";
-import NotificationCircle from "../../components/NotificationCircle";
-
-// hooks
-import useVersion from "../../customHooks/useVersion";
 
 // constants
 import routes from "../../constants/routes";
-import VERSIONS from "../../constants/versions";
 import SETTINGS from "../../constants/settings";
 
 // styles
 import classes from "./styles.module.css";
 
 export default function SettingsPage() {
-  const [isShowInfoUpdate, updateInfoVersion] = useVersion(
-    VERSIONS.INFO.key,
-    VERSIONS.INFO.version,
-  );
-
   const { optionsValues, optionsKeys } = SETTINGS;
 
   return (
@@ -40,16 +29,6 @@ export default function SettingsPage() {
       <Link to={routes.STORAGE} className={`border ${classes.link}`}>
         <span>Տվյալներ</span>
         <GrStorage size="2.3rem" />
-      </Link>
-
-      <Link
-        to={routes.INFO}
-        onClick={updateInfoVersion}
-        className={`border ${classes.link}`}
-      >
-        <span>Ինֆո</span>
-        <BsInfoCircle size="2.3rem" />
-        {isShowInfoUpdate && <NotificationCircle />}
       </Link>
 
       <Link

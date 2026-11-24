@@ -1,3 +1,9 @@
 .root {
   padding-bottom: 5rem;
 }
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

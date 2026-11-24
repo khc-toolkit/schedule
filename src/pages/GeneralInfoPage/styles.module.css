@@ -24,3 +24,14 @@
   color: var(--text);
   background: var(--bg-contrast);
 }
+
+div.link {
+  background: #636363;
+  color: rgb(167, 167, 167);
+}
+
+.notReadyMessage {
+  display: block;
+  font-size: 14px;
+  color: var(--text-dim);
+}

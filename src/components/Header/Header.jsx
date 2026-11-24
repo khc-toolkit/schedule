@@ -25,7 +25,7 @@ export default function Header() {
     [routes.SCHEDULE_WEEK]: "Դասացուցակ",
     [routes.SETTINGS]: "Կարգավորումներ",
     [routes.STORAGE]: "Տվյալներ",
-    [routes.INFO]: "Ինֆո",
+    [routes.INFO]: "Թարմացումներ",
     [routes.GENERAL_INFO]: "Ընդհանուր ինֆո",
     [routes.LECTURES]: "Դասախոսներ",
     [routes.WEEK_ITEMS_COUNT]: "Դասերի քանակ",
