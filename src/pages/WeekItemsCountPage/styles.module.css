@@ -1,0 +1,27 @@
+.root {
+  padding-bottom: 5rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: var(--bg-contrast);
+}
+
+.itemName {
+}
+
+.itemCount {
+  color: var(--text-dim);
+}

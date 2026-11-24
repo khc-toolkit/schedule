@@ -2,60 +2,25 @@
   padding-bottom: 5rem;
 }
 
-.lecturerss > h2 {
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.lecturerss {
+.root {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.lecturers {
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  background: var(--bg-contrast);
-}
-
-.lecturersName {
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.lecturersTitle {
-  color: var(--text-dim);
-}
-
-.items {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 30px;
-  border-radius: 5px;
-}
-
-.items > h2 {
-  text-align: center;
-}
-
-.item {
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  gap: 10px;
   justify-content: space-between;
-  align-items: flex-end;
+  gap: 10px;
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 4.5rem;
+}
+
+.link {
+  position: relative;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-radius: 10px;
+  color: var(--text);
   background: var(--bg-contrast);
-}
-
-.itemName {
-}
-
-.itemCount {
-  color: var(--text-dim);
 }

@@ -11,6 +11,9 @@ import EventsPage from "./pages/EventsPage";
 import ScheduleWeekPage from "./pages/ScheduleWeekPage";
 import StoragePage from "./pages/StoragePage";
 import GeneralInfoPage from "./pages/GeneralInfoPage";
+import LecturersPage from "./pages/LecturersPage";
+import WeekItemsCountPage from "./pages/WeekItemsCountPage";
+import TasksPage from "./pages/TasksPage";
 
 // components
 import Navigation from "./components/Navigation";
@@ -60,6 +63,12 @@ function App() {
             }
           />
           <Route path={routes.GENERAL_INFO} element={<GeneralInfoPage />} />
+          <Route path={routes.LECTURES} element={<LecturersPage />} />
+          <Route
+            path={routes.WEEK_ITEMS_COUNT}
+            element={<WeekItemsCountPage />}
+          />
+          <Route path={routes.TASKS} element={<TasksPage />} />
         </Route>
       </Routes>
 

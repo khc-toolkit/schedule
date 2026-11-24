@@ -27,6 +27,9 @@ export default function Header() {
     [routes.STORAGE]: "Տվյալներ",
     [routes.INFO]: "Ինֆո",
     [routes.GENERAL_INFO]: "Ընդհանուր ինֆո",
+    [routes.LECTURES]: "Դասախոսներ",
+    [routes.WEEK_ITEMS_COUNT]: "Դասերի քանակ",
+    [routes.TASKS]: "Անհատական աշխ․",
   };
 
   return (
