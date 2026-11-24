@@ -53,6 +53,7 @@ body {
   padding: 15px;
   color: var(--text);
   background: var(--bg);
+  background-attachment: fixed;
 }
 
 button {
