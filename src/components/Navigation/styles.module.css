@@ -31,15 +31,9 @@
   -ms-user-select: none; /* IE/Edge */
   border-radius: 0;
   color: var(--text);
-  svg {
-    opacity: 0.7;
-  }
 }
 
 .activeTab {
-  svg {
-    opacity: 1;
-  }
   color: #fbbf24;
   filter: drop-shadow(0px 0px 5px #f5c44898);
 }
