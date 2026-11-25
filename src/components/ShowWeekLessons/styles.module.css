@@ -38,6 +38,11 @@
   color: var(--text-negative);
 }
 
+.today:not(.buttonActive) {
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
 .lessons {
   margin-top: 10px;
   display: flex;

@@ -26,7 +26,9 @@ export default function ShowWeekLessons() {
     return dayNum;
   });
 
-  const [dayscheduleNum, setDayscheduleNum] = useState(initState);
+  const todayNum = initState();
+
+  const [dayscheduleNum, setDayscheduleNum] = useState(todayNum);
 
   const days = ["Երկ", "Երք", "Չրք", "Հնգ", "Ուրբ"];
 
@@ -56,7 +58,7 @@ export default function ShowWeekLessons() {
         {days.map((day, ind) => (
           <button
             key={day}
-            className={`${classes.button} ${ind === dayscheduleNum && classes.buttonActive}`}
+            className={`${classes.button} ${ind === dayscheduleNum && classes.buttonActive} ${todayNum === ind && classes.today}`}
             onClick={() => setDayscheduleNum(ind)}
           >
             {day}
