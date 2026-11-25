@@ -68,7 +68,7 @@ function App() {
             path={routes.WEEK_ITEMS_COUNT}
             element={<WeekItemsCountPage />}
           />
-          {/* <Route path={routes.TASKS} element={<TasksPage />} /> */}
+          <Route path={routes.TASKS} element={<TasksPage />} />
         </Route>
       </Routes>
 

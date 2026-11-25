@@ -26,18 +26,10 @@ export default function GeneralInfoPage() {
 
   return (
     <div className={classes.root}>
-      {/* <Link className={`border ${classes.link}`} to={ROUTES.TASKS}>
+      <Link className={`border ${classes.link}`} to={ROUTES.TASKS}>
         <span> Անհատականի մատերիալ</span>
         <FaLink size="2.3rem" />
-      </Link> */}
-
-      <div>
-        <span className={classes.notReadyMessage}>դեռ պատրաստ չի</span>
-        <div className={`border ${classes.link}`}>
-          <span> Անհատականի մատերիալ</span>
-          <FaLink size="2.3rem" />
-        </div>
-      </div>
+      </Link>
 
       <Link className={`border ${classes.link}`} to={ROUTES.LECTURES}>
         Դասախոսներ
