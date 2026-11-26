@@ -1,9 +1,47 @@
 .root {
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #378f70;
+  background: var(--bg-contrast);
 }
 
 .title {
-  font-size: 1.1rem;
+  text-align: center;
+  padding: 5px 0 10px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.driveLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  color: var(--text);
+}
+
+.driveIcon {
+  width: 30px;
+}
+
+.sendOnline,
+.notReady {
+  padding: 8px 16px;
+  border-radius: 3px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notReady {
+  background-color: var(--error);
+}
+
+.sendOnline {
+  /* background: var(--accent); */
+  /* color: var(--text-negative); */
+  color: #ffd34f;
 }

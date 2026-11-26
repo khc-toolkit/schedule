@@ -33,3 +33,13 @@
   max-width: 425px;
   border-radius: 5px;
 }
+
+.link {
+  margin-left: 14px;
+  width: fit-content;
+  padding: 6px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--primary-shade);
+}

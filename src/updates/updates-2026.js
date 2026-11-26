@@ -24,6 +24,13 @@ import { listTypes } from "./latest";
 
 const updates = [
   {
+    version: "1.21.0",
+    list: [
+      [listTypes.text, "Հեռացվել է թեմաները փոխելու հնարավորությունը։"],
+      [listTypes.text, "Թարմացվել է մի քանի էլէմենտի ոճերը։"],
+    ],
+  },
+  {
     version: "1.20.0",
     list: [
       [listTypes.text, "Դասի քարտում ավելացվել են պատկերակներ։"],

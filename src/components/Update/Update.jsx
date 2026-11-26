@@ -6,6 +6,7 @@ import { listTypes } from "../../updates/latest";
 
 // styles
 import classes from "./styles.module.css";
+import { Link } from "react-router-dom";
 
 export default function Update({ data }) {
   const { version, list } = data;
@@ -20,8 +21,15 @@ export default function Update({ data }) {
             {type === listTypes.text && (
               <p className={classes.text}>{content}</p>
             )}
+
             {type === listTypes.img && (
               <img className={classes.preview} src={content} alt="preview" />
+            )}
+
+            {type === listTypes.link && (
+              <Link className={`border ${classes.link}`} to={content[0]}>
+                {content[1]}
+              </Link>
             )}
           </React.Fragment>
         ))}
