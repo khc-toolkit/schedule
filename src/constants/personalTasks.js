@@ -15,7 +15,10 @@ const PERSONAL_TASKS = [
     true,
   ),
   new PersonalTask(ITEMS.armenianHistory),
-  new PersonalTask(ITEMS.armenianLanguage),
+  new PersonalTask(
+    ITEMS.armenianLanguage,
+    "https://drive.google.com/drive/folders/1EJqQ--1NBw8mdgKecKq6C7hiGIGRMubn",
+  ),
   new PersonalTask(
     ITEMS.cybersecurity,
     "https://drive.google.com/drive/folders/1XXSZvBeJYDFctlEf3g1o7CG_X97r8g_8",
@@ -33,7 +36,10 @@ const PERSONAL_TASKS = [
     ITEMS.lifeSafety,
     "https://drive.google.com/drive/folders/11Gsys5V89G_LGtz7t8Uo2pSerV-gTD3X",
   ),
-  new PersonalTask(ITEMS.mathAnalysis),
+  new PersonalTask(
+    ITEMS.mathAnalysis,
+    "https://drive.google.com/drive/folders/1EuQKWw5aRiIoODfxGTSUkN3Gz_Bb4eIu",
+  ),
 ];
 
 export default PERSONAL_TASKS;
