@@ -4,6 +4,7 @@ import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 import { FaLink } from "react-icons/fa6";
 import { LuBookText } from "react-icons/lu";
 import { BsInfoCircle } from "react-icons/bs";
+import { RiTelegram2Fill } from "react-icons/ri";
 
 // components
 import NotificationCircle from "../../components/NotificationCircle";
@@ -49,6 +50,15 @@ export default function GeneralInfoPage() {
         <span>Թարմացումներ</span>
         <BsInfoCircle size="2.2rem" />
         {isShowInfoUpdate && <NotificationCircle />}
+      </Link>
+
+      <Link
+        to={"https://t.me/+yX4R8wff6PQxOTIy"}
+        target="_blank"
+        className={`border ${classes.telegram}`}
+      >
+        <RiTelegram2Fill size="2.3rem" />
+        <span>Telegram</span>
       </Link>
     </div>
   );
