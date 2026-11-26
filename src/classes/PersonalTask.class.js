@@ -1,15 +1,7 @@
 export default class PersonalTask {
-  constructor(itemName) {
-    this.itemName = itemName;
-    this.task = [];
-    this.resources = [];
-  }
-
-  addTask(...text) {
-    this.task = [...this.task, ...text];
-  }
-
-  addResource(...resources) {
-    this.resources = [...this.resources, ...resources];
+  constructor(title, link = null, shouldOnline = false) {
+    this.title = title;
+    this.link = link;
+    this.shouldOnline = shouldOnline;
   }
 }
