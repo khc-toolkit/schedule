@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 700px;
   margin: auto;
+  margin-bottom: 4rem;
 }
 
 .headerText {
@@ -11,9 +12,8 @@
 }
 
 .buttons {
-  position: sticky;
-  bottom: 70px;
-  margin-top: 10px;
+  position: fixed;
+  bottom: 80px;
   padding: 3px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
