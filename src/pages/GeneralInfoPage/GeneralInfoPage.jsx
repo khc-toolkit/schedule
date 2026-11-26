@@ -25,11 +25,22 @@ export default function GeneralInfoPage() {
     VERSIONS.INFO.version,
   );
 
+  const [isShowPersonalTasksUpdate, setIsShowPersonalTasks] = useVersion(
+    VERSIONS.PERSONAL_TASKS.key,
+    VERSIONS.PERSONAL_TASKS.version,
+  );
+
   return (
     <div className={classes.root}>
-      <Link className={`border ${classes.link}`} to={ROUTES.TASKS}>
+      <Link
+        className={`border ${classes.link}`}
+        to={ROUTES.TASKS}
+        onClick={setIsShowPersonalTasks}
+      >
         <span> Անհատականի մատերիալ</span>
         <FaLink size="2.3rem" />
+
+        {isShowPersonalTasksUpdate && <NotificationCircle />}
       </Link>
 
       <Link className={`border ${classes.link}`} to={ROUTES.LECTURES}>
