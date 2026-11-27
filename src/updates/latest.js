@@ -1,7 +1,7 @@
 // constants
 import ROUTES from "../constants/routes";
 
-const lastUpdateAt = "2026-11-26T09:20:05.660Z"
+const lastUpdateAt = "2026-11-26T09:20:05.660Z";
 
 export const listTypes = {
   text: "text",
@@ -12,6 +12,20 @@ export const listTypes = {
 const updates = {
   lastUpdateAt,
   versions: [
+    {
+      version: "1.23.0",
+      list: [
+        [listTypes.text, "Ծրագիրը անցել է միջոցառումների ռեժիմ"],
+        [
+          listTypes.text,
+          "Լավացվել է UI/UX Ընդհանուր ինֆո և Կարգավորումներ էջերում",
+        ],
+        [
+          listTypes.text,
+          "Տվյալների էջում հնարավոր է ջնջել չօգտագործվող տվյալներ եթե կան այդպիսիք",
+        ],
+      ],
+    },
     {
       version: "1.22.1",
       list: [
@@ -31,16 +45,6 @@ const updates = {
           listTypes.text,
           "Ավելացվել է նոր էջ՝ անհատական աշխատանքի ռեսուրսների համար",
         ],
-      ],
-    },
-    {
-      version: "1.21.1",
-      list: [
-        [listTypes.text, "Միացված է ամանորյա թեման"],
-        [listTypes.text, "Ավելացված է լույսեր"],
-        [listTypes.text, "Ավելացված է ձյուն"],
-        [listTypes.text, "Ավելացված է ձյունը անջատելու կարգավորում"],
-        [listTypes.text, "Ավելացված է լույսեր անջատելու կարգավորում"],
       ],
     },
   ],
