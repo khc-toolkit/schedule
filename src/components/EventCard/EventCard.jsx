@@ -11,7 +11,16 @@ import timeFormat from "../../utils/timeFormat";
 import classes from "./styles.module.css";
 
 export default function EventCard({ data }) {
-  const { title, place, date, duration, isPrev, isExam, isDiploma } = data;
+  const {
+    title,
+    place,
+    date,
+    duration,
+    isPrev,
+    isExam,
+    isDiploma,
+    availableBefore,
+  } = data;
 
   const dateWithoutDuration = new Date(date);
   const dateWithDuration = new Date(date);
@@ -30,7 +39,16 @@ export default function EventCard({ data }) {
       {!isPrev && (
         <div className={`${classes.timer} ${classes.withIcon}`}>
           <IoIosTimer />
-          {isStarted ? <p>ՀԻՄԱ</p> : <p>Մնաց {timeFormat(date)}</p>}
+          {isStarted ? (
+            <div className={classes.timeNow}>
+              <p>ՀԻՄԱ</p>
+              {availableBefore && (
+                <p>( կտևի ևս {timeFormat(availableBefore)} )</p>
+              )}
+            </div>
+          ) : (
+            <p>Մնաց {timeFormat(date)}</p>
+          )}
         </div>
       )}
 
@@ -44,9 +62,21 @@ export default function EventCard({ data }) {
         <p>{place ?? "(հայտարարված չի)"}</p>
       </div>
 
-      <div className={`${classes.date} ${classes.withIcon}`}>
-        <MdToday />
-        <p>{date ? dateFormat(date) : "(հայտարարված չի)"}</p>
+      <div className={classes.dates}>
+        <div className={`${classes.date} ${classes.withIcon}`}>
+          <MdToday />
+          <p>{date ? dateFormat(date) : "(հայտարարված չի)"}</p>
+        </div>
+
+        {availableBefore && (
+          <>
+            <p>-</p>
+            <div className={`${classes.date} ${classes.withIcon}`}>
+              <MdToday />
+              <p>{availableBefore && dateFormat(availableBefore)}</p>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

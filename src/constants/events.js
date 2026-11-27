@@ -1,4 +1,17 @@
-const allEvents = [];
+// classes
+import Event from "../classes/Event.class";
+
+const allEvents = [
+  new Event(
+    "Անհատական առաջադրանք հանձնելու օրեր",
+    "Համալսարան",
+    "2026-12-01T00:00:00+04:00",
+  ).setAvailableBefore("2026-12-12T00:00:00+04:00"),
+
+  new Event("Քննություններ", null, "2026-12-22T00:00:00+04:00")
+    .setAvailableBefore("2027-01-24T00:00:00+04:00")
+    .setIsExam(),
+];
 
 allEvents.sort(
   (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),

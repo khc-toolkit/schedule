@@ -7,6 +7,7 @@ export default class Event {
     this.isPrev = false;
     this.isExam = false;
     this.isDiploma = false;
+    this.availableBefore = null;
   }
 
   setIsPrev() {
@@ -21,6 +22,17 @@ export default class Event {
 
   setIsDiploma() {
     this.isDiploma = true;
+    return this;
+  }
+
+  setAvailableBefore(date) {
+    this.availableBefore = date;
+
+    const startDate = new Date(this.date);
+    const endDate = new Date(date);
+
+    this.duration = (endDate - startDate) / (1000 * 60 * 60);
+
     return this;
   }
 }
