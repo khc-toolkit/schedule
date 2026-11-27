@@ -20,3 +20,9 @@
   color: var(--text);
   background: var(--bg-contrast);
 }
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

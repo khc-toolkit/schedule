@@ -4,6 +4,6 @@ const appModes = {
   OFFLINE: "offline",
 };
 
-export const defaultMode = appModes.SCHEDULE;
+export const defaultMode = appModes.OFFLINE;
 
 export default appModes;

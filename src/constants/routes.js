@@ -13,6 +13,6 @@ const routes = {
   WEEK_ITEMS_COUNT: "/week_items_count",
 };
 
-export const defaultRoute = routes.SCHEDULE;
+export const defaultRoute = routes.EVENTS;
 
 export default routes;

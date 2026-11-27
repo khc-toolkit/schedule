@@ -16,6 +16,12 @@
   color: var(--text);
 }
 
+.timeNow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .timer {
   margin-bottom: 10px;
 }
@@ -39,6 +45,12 @@
 
 .place {
   margin-bottom: 4px;
+}
+
+.dates {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* .date {} */
