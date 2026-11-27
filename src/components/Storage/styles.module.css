@@ -36,6 +36,11 @@
   text-align: left;
 }
 
+.unusableData {
+  font-weight: bold;
+  color: var(--accent);
+}
+
 .value {
   text-align: right;
   margin-top: 5px;
