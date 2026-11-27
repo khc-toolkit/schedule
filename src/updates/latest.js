@@ -1,7 +1,7 @@
 // constants
 import ROUTES from "../constants/routes";
 
-const lastUpdateAt = "2026-11-26T09:20:05.660Z";
+const lastUpdateAt = "2026-11-27T21:04:38.042Z"
 
 export const listTypes = {
   text: "text",
