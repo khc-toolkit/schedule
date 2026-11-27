@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/schedule/static/css/main.6646b9be.css",
-    "main.js": "/schedule/static/js/main.4a1b9273.js",
-    "static/css/271.4831c66b.chunk.css": "/schedule/static/css/271.4831c66b.chunk.css",
-    "static/js/271.08663f50.chunk.js": "/schedule/static/js/271.08663f50.chunk.js",
-    "static/js/21.dae0c30c.chunk.js": "/schedule/static/js/21.dae0c30c.chunk.js",
+    "main.css": "/schedule/static/css/main.a35f24cd.css",
+    "main.js": "/schedule/static/js/main.702ff8a5.js",
+    "static/css/271.e08b3c86.chunk.css": "/schedule/static/css/271.e08b3c86.chunk.css",
+    "static/js/271.654ebf0d.chunk.js": "/schedule/static/js/271.654ebf0d.chunk.js",
+    "static/js/21.9debc717.chunk.js": "/schedule/static/js/21.9debc717.chunk.js",
     "static/media/google_drive.png": "/schedule/static/media/google_drive.6b964744c0656d85645c.png",
     "static/media/theme-artemis_ii.png": "/schedule/static/media/theme-artemis_ii.6d7bfa137af121a44987.png",
     "static/media/theme-moon.png": "/schedule/static/media/theme-moon.8ab3582eb3e3812b5430.png",
@@ -19,14 +19,14 @@
     "static/media/week-component.png": "/schedule/static/media/week-component.00f1cf23b7eb0b1c35a0.png",
     "static/media/theme.png": "/schedule/static/media/theme.c0db2c5d41796aa8add9.png",
     "index.html": "/schedule/index.html",
-    "main.6646b9be.css.map": "/schedule/static/css/main.6646b9be.css.map",
-    "main.4a1b9273.js.map": "/schedule/static/js/main.4a1b9273.js.map",
-    "271.4831c66b.chunk.css.map": "/schedule/static/css/271.4831c66b.chunk.css.map",
-    "271.08663f50.chunk.js.map": "/schedule/static/js/271.08663f50.chunk.js.map",
-    "21.dae0c30c.chunk.js.map": "/schedule/static/js/21.dae0c30c.chunk.js.map"
+    "main.a35f24cd.css.map": "/schedule/static/css/main.a35f24cd.css.map",
+    "main.702ff8a5.js.map": "/schedule/static/js/main.702ff8a5.js.map",
+    "271.e08b3c86.chunk.css.map": "/schedule/static/css/271.e08b3c86.chunk.css.map",
+    "271.654ebf0d.chunk.js.map": "/schedule/static/js/271.654ebf0d.chunk.js.map",
+    "21.9debc717.chunk.js.map": "/schedule/static/js/21.9debc717.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6646b9be.css",
-    "static/js/main.4a1b9273.js"
+    "static/css/main.a35f24cd.css",
+    "static/js/main.702ff8a5.js"
   ]
 }
