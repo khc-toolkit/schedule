@@ -5,6 +5,7 @@ import { FaLink } from "react-icons/fa6";
 import { LuBookText } from "react-icons/lu";
 import { BsInfoCircle } from "react-icons/bs";
 import { RiTelegram2Fill } from "react-icons/ri";
+import { RiArrowRightWideFill } from "react-icons/ri";
 
 // components
 import NotificationCircle from "../../components/NotificationCircle";
@@ -37,20 +38,29 @@ export default function GeneralInfoPage() {
         to={ROUTES.TASKS}
         onClick={setIsShowPersonalTasks}
       >
-        <span> Անհատականի մատերիալ</span>
-        <FaLink size="2.3rem" />
+        <div className={classes.leftSection}>
+          <FaLink size="1.8rem" />
+          <p>Անհատականի մատերիալ</p>
+          {isShowPersonalTasksUpdate && <NotificationCircle />}
+        </div>
 
-        {isShowPersonalTasksUpdate && <NotificationCircle />}
+        <RiArrowRightWideFill color="#afafaf" size="2rem" />
       </Link>
 
       <Link className={`border ${classes.link}`} to={ROUTES.LECTURES}>
-        Դասախոսներ
-        <LiaChalkboardTeacherSolid size="2.5rem" />
+        <div className={classes.leftSection}>
+          <LiaChalkboardTeacherSolid size="1.8rem" />
+          <p>Դասախոսներ</p>
+        </div>
+        <RiArrowRightWideFill color="#afafaf" size="2rem" />
       </Link>
 
       <Link className={`border ${classes.link}`} to={ROUTES.WEEK_ITEMS_COUNT}>
-        Շաբաթական դասաժամերի քանակ
-        <LuBookText size="2.3rem" />
+        <div className={classes.leftSection}>
+          <LuBookText size="1.8rem" />
+          <p>Շաբաթական դասաժամերի քանակ</p>
+        </div>
+        <RiArrowRightWideFill color="#afafaf" size="2.2rem" />
       </Link>
 
       <Link
@@ -58,9 +68,12 @@ export default function GeneralInfoPage() {
         onClick={updateInfoVersion}
         className={`border ${classes.link}`}
       >
-        <span>Թարմացումներ</span>
-        <BsInfoCircle size="2.2rem" />
+        <div className={classes.leftSection}>
+          <BsInfoCircle size="1.8rem" />
+          <p>Թարմացումներ</p>
+        </div>
         {isShowInfoUpdate && <NotificationCircle />}
+        <RiArrowRightWideFill color="#afafaf" size="2rem" />
       </Link>
 
       <Link

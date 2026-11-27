@@ -30,6 +30,12 @@ div.link {
   color: rgb(167, 167, 167);
 }
 
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .notReadyMessage {
   display: block;
   font-size: 14px;
