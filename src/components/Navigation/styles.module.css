@@ -3,11 +3,23 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  /* width: 100%; */
   z-index: 100;
-  background: var(--bg-contrast);
+  /* background: var(--bg-contrast); */
   /* backdrop-filter: blur(20px); */
-  border-top: 1px solid var(--border);
+  /* border-top: 1px solid var(--border); */
+
+  width: fit-content;
+  margin: auto;
+  bottom: 10px;
+  padding: 0px 15px;
+  border-radius: 50px;
+
+  backdrop-filter: blur(15px);
+  border-radius: 100px;
+  text-shadow:
+    0 0 5px #ffffff8f,
+    0 0 5px #00000080;
 }
 
 .panel {
@@ -31,6 +43,8 @@
   -ms-user-select: none; /* IE/Edge */
   border-radius: 0;
   color: var(--text);
+
+  filter: drop-shadow(0px 0px 5px #000000c5);
 }
 
 .activeTab {
